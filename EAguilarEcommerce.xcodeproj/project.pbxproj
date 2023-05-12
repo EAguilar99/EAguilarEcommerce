@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D97D67909AD83DDA70DD312 /* Pods_EAguilarEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C519E57185B5B92BCA645 /* Pods_EAguilarEcommerce.framework */; };
+		F93FA5012A01DC090058E3AD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FA5002A01DC090058E3AD /* Result.swift */; };
+		F95A52B829FC56A800F8C4B2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B729FC56A800F8C4B2 /* DBManager.swift */; };
+		F95A52BA29FC56CD00F8C4B2 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B929FC56CD00F8C4B2 /* Usuario.swift */; };
+		F9641C5F2A0D5A3900F20C3C /* RolFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */; };
+		F97032332A04396F001157C5 /* UsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97032322A04396F001157C5 /* UsuarioViewModel.swift */; };
+		F97899882A03128F001F445F /* GetAllUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97899872A03128F001F445F /* GetAllUsuarioController.swift */; };
+		F978998B2A03166D001F445F /* UsuarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97899892A03166D001F445F /* UsuarioCell.swift */; };
+		F978998C2A03166D001F445F /* UsuarioCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F978998A2A03166D001F445F /* UsuarioCell.xib */; };
+		F99E217529FB24210053A4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99E217429FB24210053A4CC /* AppDelegate.swift */; };
+		F99E217729FB24210053A4CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99E217629FB24210053A4CC /* SceneDelegate.swift */; };
+		F99E217929FB24210053A4CC /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99E217829FB24210053A4CC /* FormController.swift */; };
+		F99E217C29FB24210053A4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99E217A29FB24210053A4CC /* Main.storyboard */; };
+		F99E217E29FB24230053A4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99E217D29FB24230053A4CC /* Assets.xcassets */; };
+		F99E218129FB24230053A4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99E217F29FB24230053A4CC /* LaunchScreen.storyboard */; };
+		F9E07F312A0B08EE0036A638 /* Rol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F302A0B08EE0036A638 /* Rol.swift */; };
+		F9E07F342A0B09E40036A638 /* RolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F322A0B09E40036A638 /* RolCell.swift */; };
+		F9E07F352A0B09E40036A638 /* RolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E07F332A0B09E40036A638 /* RolCell.xib */; };
+		F9E07F372A0B0BD00036A638 /* RolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F362A0B0BD00036A638 /* RolViewModel.swift */; };
+		F9E07F3E2A0B139C0036A638 /* RolGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1100AE095097015F2F59079A /* Pods-EAguilarEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		8C0C519E57185B5B92BCA645 /* Pods_EAguilarEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAguilarEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A21206F6002A1C3C964EAA /* Pods-EAguilarEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarEcommerce.release.xcconfig"; path = "Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		F93FA5002A01DC090058E3AD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F95A52B729FC56A800F8C4B2 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		F95A52B929FC56CD00F8C4B2 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolFormController.swift; sourceTree = "<group>"; };
+		F97032322A04396F001157C5 /* UsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewModel.swift; sourceTree = "<group>"; };
+		F97767E82A0DB5FA001F6A83 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97899872A03128F001F445F /* GetAllUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsuarioController.swift; sourceTree = "<group>"; };
+		F97899892A03166D001F445F /* UsuarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioCell.swift; sourceTree = "<group>"; };
+		F978998A2A03166D001F445F /* UsuarioCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsuarioCell.xib; sourceTree = "<group>"; };
+		F99E217129FB24210053A4CC /* EAguilarEcommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAguilarEcommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99E217429FB24210053A4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F99E217629FB24210053A4CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F99E217829FB24210053A4CC /* FormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
+		F99E217B29FB24210053A4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F99E217D29FB24230053A4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F99E218029FB24230053A4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F99E218229FB24230053A4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A0A33C2A0DB8100048FF15 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A0A3402A0DB8F90048FF15 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C2809229FC6348002DD699 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F9E07F302A0B08EE0036A638 /* Rol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rol.swift; sourceTree = "<group>"; };
+		F9E07F322A0B09E40036A638 /* RolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolCell.swift; sourceTree = "<group>"; };
+		F9E07F332A0B09E40036A638 /* RolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RolCell.xib; sourceTree = "<group>"; };
+		F9E07F362A0B0BD00036A638 /* RolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolViewModel.swift; sourceTree = "<group>"; };
+		F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolGetAllController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F99E216E29FB24210053A4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D97D67909AD83DDA70DD312 /* Pods_EAguilarEcommerce.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B9291A2A7E282930CEB39CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1100AE095097015F2F59079A /* Pods-EAguilarEcommerce.debug.xcconfig */,
+				D8A21206F6002A1C3C964EAA /* Pods-EAguilarEcommerce.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F9402E542A04373500F01E95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F9E07F3C2A0B10F20036A638 /* Rol */,
+				F99E217829FB24210053A4CC /* FormController.swift */,
+				F9402E592A0437D100F01E95 /* Usuario */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9402E552A04374E00F01E95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F95A52B929FC56CD00F8C4B2 /* Usuario.swift */,
+				F93FA5002A01DC090058E3AD /* Result.swift */,
+				F9E07F302A0B08EE0036A638 /* Rol.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9402E562A04376600F01E95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F97032342A043AE3001157C5 /* Cell */,
+				F99E217A29FB24210053A4CC /* Main.storyboard */,
+				F99E217F29FB24230053A4CC /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9402E572A04377500F01E95 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F97032322A04396F001157C5 /* UsuarioViewModel.swift */,
+				F9E07F362A0B0BD00036A638 /* RolViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9402E582A04378600F01E95 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				F95A52B729FC56A800F8C4B2 /* DBManager.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		F9402E592A0437D100F01E95 /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+				F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */,
+				F97899872A03128F001F445F /* GetAllUsuarioController.swift */,
+			);
+			path = Usuario;
+			sourceTree = "<group>";
+		};
+		F97032342A043AE3001157C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F978998A2A03166D001F445F /* UsuarioCell.xib */,
+				F97899892A03166D001F445F /* UsuarioCell.swift */,
+				F9E07F322A0B09E40036A638 /* RolCell.swift */,
+				F9E07F332A0B09E40036A638 /* RolCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F99E216829FB24210053A4CC = {
+			isa = PBXGroup;
+			children = (
+				F99E217329FB24210053A4CC /* EAguilarEcommerce */,
+				F99E217229FB24210053A4CC /* Products */,
+				F9C2809129FC6347002DD699 /* Frameworks */,
+				1B9291A2A7E282930CEB39CF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F99E217229FB24210053A4CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F99E217129FB24210053A4CC /* EAguilarEcommerce.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F99E217329FB24210053A4CC /* EAguilarEcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				F9402E582A04378600F01E95 /* Util */,
+				F9402E572A04377500F01E95 /* ViewModel */,
+				F9402E562A04376600F01E95 /* View */,
+				F9402E552A04374E00F01E95 /* Model */,
+				F9402E542A04373500F01E95 /* Controller */,
+				F99E217429FB24210053A4CC /* AppDelegate.swift */,
+				F99E217629FB24210053A4CC /* SceneDelegate.swift */,
+				F99E217D29FB24230053A4CC /* Assets.xcassets */,
+				F99E218229FB24230053A4CC /* Info.plist */,
+			);
+			path = EAguilarEcommerce;
+			sourceTree = "<group>";
+		};
+		F9C2809129FC6347002DD699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9A0A3402A0DB8F90048FF15 /* iOSDropDown.framework */,
+				F9A0A33C2A0DB8100048FF15 /* iOSDropDown.framework */,
+				F97767E82A0DB5FA001F6A83 /* iOSDropDown.framework */,
+				F9C2809229FC6348002DD699 /* libsqlite3.tbd */,
+				8C0C519E57185B5B92BCA645 /* Pods_EAguilarEcommerce.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9E07F3C2A0B10F20036A638 /* Rol */ = {
+			isa = PBXGroup;
+			children = (
+				F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */,
+			);
+			path = Rol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F99E217029FB24210053A4CC /* EAguilarEcommerce */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99E218529FB24230053A4CC /* Build configuration list for PBXNativeTarget "EAguilarEcommerce" */;
+			buildPhases = (
+				E1ABE3D22451FECB91D6FC06 /* [CP] Check Pods Manifest.lock */,
+				F99E216D29FB24210053A4CC /* Sources */,
+				F99E216E29FB24210053A4CC /* Frameworks */,
+				F99E216F29FB24210053A4CC /* Resources */,
+				26DEF6356D9AE7DF9E99602E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EAguilarEcommerce;
+			productName = EAguilarEcommerce;
+			productReference = F99E217129FB24210053A4CC /* EAguilarEcommerce.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F99E216929FB24210053A4CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F99E217029FB24210053A4CC = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F99E216C29FB24210053A4CC /* Build configuration list for PBXProject "EAguilarEcommerce" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F99E216829FB24210053A4CC;
+			productRefGroup = F99E217229FB24210053A4CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F99E217029FB24210053A4CC /* EAguilarEcommerce */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F99E216F29FB24210053A4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F978998C2A03166D001F445F /* UsuarioCell.xib in Resources */,
+				F99E218129FB24230053A4CC /* LaunchScreen.storyboard in Resources */,
+				F99E217E29FB24230053A4CC /* Assets.xcassets in Resources */,
+				F9E07F352A0B09E40036A638 /* RolCell.xib in Resources */,
+				F99E217C29FB24210053A4CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26DEF6356D9AE7DF9E99602E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1ABE3D22451FECB91D6FC06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EAguilarEcommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F99E216D29FB24210053A4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9E07F342A0B09E40036A638 /* RolCell.swift in Sources */,
+				F93FA5012A01DC090058E3AD /* Result.swift in Sources */,
+				F9E07F372A0B0BD00036A638 /* RolViewModel.swift in Sources */,
+				F99E217929FB24210053A4CC /* FormController.swift in Sources */,
+				F97899882A03128F001F445F /* GetAllUsuarioController.swift in Sources */,
+				F9641C5F2A0D5A3900F20C3C /* RolFormController.swift in Sources */,
+				F9E07F312A0B08EE0036A638 /* Rol.swift in Sources */,
+				F9E07F3E2A0B139C0036A638 /* RolGetAllController.swift in Sources */,
+				F99E217529FB24210053A4CC /* AppDelegate.swift in Sources */,
+				F978998B2A03166D001F445F /* UsuarioCell.swift in Sources */,
+				F99E217729FB24210053A4CC /* SceneDelegate.swift in Sources */,
+				F97032332A04396F001157C5 /* UsuarioViewModel.swift in Sources */,
+				F95A52BA29FC56CD00F8C4B2 /* Usuario.swift in Sources */,
+				F95A52B829FC56A800F8C4B2 /* DBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F99E217A29FB24210053A4CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99E217B29FB24210053A4CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F99E217F29FB24230053A4CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F99E218029FB24230053A4CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F99E218329FB24230053A4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F99E218429FB24230053A4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F99E218629FB24230053A4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1100AE095097015F2F59079A /* Pods-EAguilarEcommerce.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EAguilarEcommerce/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.EAguilarEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F99E218729FB24230053A4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A21206F6002A1C3C964EAA /* Pods-EAguilarEcommerce.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EAguilarEcommerce/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.EAguilarEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F99E216C29FB24210053A4CC /* Build configuration list for PBXProject "EAguilarEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99E218329FB24230053A4CC /* Debug */,
+				F99E218429FB24230053A4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99E218529FB24230053A4CC /* Build configuration list for PBXNativeTarget "EAguilarEcommerce" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F99E218629FB24230053A4CC /* Debug */,
+				F99E218729FB24230053A4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F99E216929FB24210053A4CC /* Project object */;
+}
