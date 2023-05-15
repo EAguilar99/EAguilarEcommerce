@@ -14,10 +14,8 @@ class GetAllUsuarioController: UITableViewController {
     var usuarios : [Usuario] = []
     let dbManager = DBManager()
     var IdUsuario : Int = 0
+    var IdRol : Int  = 0
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,12 +24,11 @@ class GetAllUsuarioController: UITableViewController {
         
         tableView.register(nib , forCellReuseIdentifier: "UsuarioCell")
         
-        
-        
         var result = UsuarioViewModel.GetAll()
         
         if result.Correct!
         {
+            //tableView.reloadData()
             for ObjUsuario in result.Objects!
             {
                 let usuario = ObjUsuario as! Usuario
@@ -52,7 +49,6 @@ class GetAllUsuarioController: UITableViewController {
         return usuarios.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsuarioCell", for: indexPath) as! UsuarioCell
@@ -70,13 +66,11 @@ class GetAllUsuarioController: UITableViewController {
         print("el index actual es \(indexPath.row)")
         // cell.textLabel?.text = usuarios[indexPath.row].Nombre
         
-        
-        
         return cell
     }
 }
 
-//swipe
+//MARK: implementacion de swipe
 
 extension GetAllUsuarioController : SwipeTableViewCellDelegate{
     
@@ -150,6 +144,12 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
         {
             let formControl = segue.destination as!  FormController
             formControl.IdUsuario  = self.IdUsuario
+        }
+        
+        if segue.identifier == "FormController"
+        {
+            let formControl = segue.destination as!  FormController
+            formControl.IdRol  = self.IdRol
         }
         
     }

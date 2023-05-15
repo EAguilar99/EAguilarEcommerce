@@ -8,7 +8,6 @@
 import Foundation
 import SQLite3
 
-
 class UsuarioViewModel
 {
     
@@ -83,7 +82,7 @@ class UsuarioViewModel
                     usuario.FechaNacimiento = String(describing: String(cString: sqlite3_column_text(statement, 5)))
                     usuario.Password = String(describing: String(cString: sqlite3_column_text(statement, 6)))
                     
-                   // usuario.Rol = Rol()
+                   usuario.Rol = Rol()
                     
                     usuario.Rol?.IdRol = Int(sqlite3_column_int(statement, 7))
                     usuario.Rol?.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 8)))

@@ -531,8 +531,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
             landmarkName = "GetAll()"
             landmarkType = "7">
             <Locations>
@@ -609,8 +609,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "GetByid(idUsuario:)"
             landmarkType = "7">
             <Locations>
@@ -719,6 +719,21 @@
                   endingLineNumber = "67"
                   offsetFromSymbolStart = "196">
                </Location>
+               <Location
+                  uuid = "0F33122D-C73C-4420-95B8-59B3D4384ABC - 90ff5de6292a1f2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.UsuarioViewModel.GetByid(idUsuario: Swift.Int) -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "196">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -732,8 +747,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "Add(usuario:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -748,8 +763,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "Add(usuario:)"
             landmarkType = "7">
             <Locations>
@@ -813,6 +828,21 @@
                   endingLineNumber = "119"
                   offsetFromSymbolStart = "124">
                </Location>
+               <Location
+                  uuid = "74011378-53CE-4660-84F4-1248C9A98E1E - 7bb48f32d8866cac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.UsuarioViewModel.Add(usuario: EAguilarEcommerce.Usuario) -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "124">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -826,8 +856,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "Update(usuario:)"
             landmarkType = "7">
             <Locations>
@@ -861,6 +891,21 @@
                   endingLineNumber = "163"
                   offsetFromSymbolStart = "152">
                </Location>
+               <Location
+                  uuid = "E64DB2F7-AFFF-4C76-8F04-0FAA4729CE39 - f18f46c8254c0f1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.UsuarioViewModel.Update(usuario: EAguilarEcommerce.Usuario) -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "152">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -874,8 +919,8 @@
             filePath = "EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "214"
-            endingLineNumber = "214"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
             landmarkName = "Delete(idUsuario:)"
             landmarkType = "7">
             <Locations>

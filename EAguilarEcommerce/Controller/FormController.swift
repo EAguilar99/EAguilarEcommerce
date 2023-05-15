@@ -14,9 +14,9 @@ class FormController: UIViewController {
     
     
     @IBOutlet weak var btnAgregarOutlet: UIButton!
-    /*
-     @IBOutlet weak var btnActualizarOutlet: UIButton!*/
+    
     @IBOutlet weak var txtidUsuarioOutlet: UITextField!
+    
     @IBOutlet weak var txtUserNameOutlet: UITextField!
     
     @IBOutlet weak var txtNombreOutlet: UITextField!
@@ -33,12 +33,12 @@ class FormController: UIViewController {
     
     @IBOutlet weak var lblUserName: UILabel!
     
-    
     @IBOutlet weak var lblNombre: UILabel!
     
     @IBOutlet weak var lblApellidoPaterno: UILabel!
     
     @IBOutlet weak var lblApellidoMaterno: UILabel!
+    
     @IBOutlet weak var lblPassword: UILabel!
     
     @IBOutlet weak var btnAction: UIButton!
@@ -47,56 +47,43 @@ class FormController: UIViewController {
     
     var IdUsuario : Int = 0
     var IdRol : Int = 0
-    /*
-     override func viewWillAppear(_ animated: Bool) {
-     limpiarFornulario()
-     }*/
     
     override func viewDidLoad() {
-        
-        ddlRol.didSelect{(selectedText , index ,id) in
-            self.IdRol = id
-        }
         
         
         super.viewDidLoad()
         
-        //ddlRol.optionArray = ["user","admin","visit"]
+        
+        ddlRol.didSelect {selectedText , index , id in
+            self.IdRol =  id
+         }
+        
         ddlRol.optionArray = []
-        ddlRol.optionIds = []
-        // ddlRol.optionIds = [1,2,3]
+        ddlRol.optionIds? = []
         
         let resultRol = RolViewModel.Getall()
         
         if resultRol.Correct!{
             for objrol in resultRol.Objects!{
-                 
+                
                 var roles = objrol as! Rol
                 
                 ddlRol.optionArray.append(roles.Nombre!)
                 ddlRol.optionIds?.append(roles.IdRol!)
-                 }
-            }
-            
-            
-            print(IdUsuario)
-            
+        }
             if IdUsuario != 0
             {
                 RecuperarDatos(idUsuario: IdUsuario )
-                btnAction.backgroundColor = .yellow
+                btnAction.backgroundColor = UIColor.yellow
                 btnAction.setTitle("Actualizar", for: .normal)
-                
             }
             else
             {
-                btnAction.backgroundColor = .green
+                btnAction.backgroundColor = UIColor.green
                 btnAction.setTitle("Agregar", for: .normal)
             }
         }
-        
-        
-        
+    }
         @IBAction func btnsAction(_ sender: UIButton)
         {
             let btnSeleccionado = sender.titleLabel?.text
@@ -156,12 +143,10 @@ class FormController: UIViewController {
             usuario.FechaNacimiento = dateFormat.string(from: date)
             usuario.Password = txtPasswordOutlet.text!
             usuario.Rol = Rol()
-            usuario.Rol?.IdRol = Int(ddlRol.text!)
+            usuario.Rol?.IdRol = ddlRol.selectedIndex
             
             
             let opcion = btnAction.titleLabel?.text
-            
-            
             
             if(btnSeleccionado == "Actualizar")
             {
@@ -185,9 +170,10 @@ class FormController: UIViewController {
                     self.present(alert, animated: true)
                 }
             }
+            
             if(btnSeleccionado == "Agregar")
             {
-                limpiarFornulario()
+                //limpiarFornulario()
                 var result = UsuarioViewModel.Add(usuario: usuario)
                 if result.Correct!
                 {
@@ -206,9 +192,6 @@ class FormController: UIViewController {
             }
         }
         
-        
-        
-        
         func RecuperarDatos(idUsuario : Int)
         {
             var result = UsuarioViewModel.GetByid(idUsuario: IdUsuario)
@@ -223,13 +206,11 @@ class FormController: UIViewController {
             txtNombreOutlet.text = (usuario.Nombre!)
             txtApellidoPaternoOutlet.text = (usuario.ApellidoPaterno!)
             txtApellidoMaternoOutlet.text = (usuario.ApellidoMaterno!)
-            //dpFechaNacimientoOutlet.date =
+            //dpFechaNacimientoOutlet.date = date.dateFormat
             txtPasswordOutlet.text = (usuario.Password!)
-            ddlRol.text = String(usuario.Rol!.IdRol!)
-            //txtRol.text = (usuario.Rol?.Nombre!)
+            ddlRol.text = (usuario.Rol?.Nombre)
+            //ddlRol.text = String(usuario.Rol!.IdRol!)
         }
-        
-        
         
         func limpiarFornulario()
         {
@@ -246,7 +227,7 @@ class FormController: UIViewController {
             lblApellidoMaterno.text = ""
             
         }
-        
-        
-    }
+}
+
+
 

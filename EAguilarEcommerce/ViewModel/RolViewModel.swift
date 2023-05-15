@@ -141,7 +141,7 @@ class RolViewModel
         var result  = Result()
         var statement : OpaquePointer?
         
-        var query = "UPDATE Rol SET  Nombre = ? WHERE IdRol = \(rol.IdRol)"
+        var query = "UPDATE Rol SET  Nombre = ? WHERE IdRol = \(rol.IdRol!)"
         
         do
         {

@@ -25,7 +25,22 @@ class RolFormController: UIViewController {
     
     override func viewDidLoad()
     {
+        
         super.viewDidLoad()
+        
+        
+        txtNombreOutlet.delegate = self
+        txtNombreOutlet.tag = 1
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(RolFormController.ocultarTecladoPantalla))
+                
+                //Descomentar, si el tap no debe interferir o cancelar otras acciones
+                //tap.cancelsTouchesInView = false
+                
+                view.addGestureRecognizer(tap)
+        
+        
+        
         
         if IdRol != 0
         {
@@ -121,5 +136,25 @@ class RolFormController: UIViewController {
     
 }
 
-
+extension RolFormController : UITextFieldDelegate
+{
+    @objc func ocultarTecladoPantalla()->Void
+    {
+        view.endEditing(true)
+    }
+    
+    //Cuando la tecla de return es pulsada
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+     //Check if there is any other text-field in the view whose tag is +1 greater than the current text-field on which the return key was pressed. If yes → then move the cursor to that next text-field. If No → Dismiss the keyboard
+     if let nextField = self.view.viewWithTag(textField.tag + 1) as? UITextField {
+     nextField.becomeFirstResponder()
+     } else {
+     textField.resignFirstResponder()
+     }
+     return false
+    }
+    
+    func deslizar()
+    {}
+}
 
