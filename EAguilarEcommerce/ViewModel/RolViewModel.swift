@@ -132,7 +132,6 @@ class RolViewModel
         sqlite3_finalize(statement)
         sqlite3_close(context.db)
         return result
-        
     }
     
     static func Update(rol : Rol)->Result

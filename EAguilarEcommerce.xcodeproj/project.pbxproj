@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3D97D67909AD83DDA70DD312 /* Pods_EAguilarEcommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C0C519E57185B5B92BCA645 /* Pods_EAguilarEcommerce.framework */; };
+		F90A28D72A14308D00958F7A /* ProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28D62A14308D00958F7A /* ProductoViewModel.swift */; };
+		F90A28D92A14312700958F7A /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28D82A14312700958F7A /* Area.swift */; };
+		F90A28DB2A14313D00958F7A /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DA2A14313D00958F7A /* Departamento.swift */; };
+		F90A28DD2A14315100958F7A /* Proveedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DC2A14315100958F7A /* Proveedor.swift */; };
+		F90A28DF2A14315E00958F7A /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DE2A14315E00958F7A /* Producto.swift */; };
+		F9200F942A1538A2007E2FEA /* ProductoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9200F922A1538A2007E2FEA /* ProductoCell.swift */; };
+		F9200F952A1538A2007E2FEA /* ProductoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9200F932A1538A2007E2FEA /* ProductoCell.xib */; };
+		F9200FA02A15425D007E2FEA /* ProductoGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9200F9F2A15425D007E2FEA /* ProductoGetAllController.swift */; };
+		F9200FA22A1544E6007E2FEA /* ProductoFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9200FA12A1544E6007E2FEA /* ProductoFormController.swift */; };
 		F93FA5012A01DC090058E3AD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FA5002A01DC090058E3AD /* Result.swift */; };
 		F95A52B829FC56A800F8C4B2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B729FC56A800F8C4B2 /* DBManager.swift */; };
 		F95A52BA29FC56CD00F8C4B2 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B929FC56CD00F8C4B2 /* Usuario.swift */; };
@@ -33,6 +42,15 @@
 		1100AE095097015F2F59079A /* Pods-EAguilarEcommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarEcommerce.debug.xcconfig"; path = "Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		8C0C519E57185B5B92BCA645 /* Pods_EAguilarEcommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EAguilarEcommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A21206F6002A1C3C964EAA /* Pods-EAguilarEcommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EAguilarEcommerce.release.xcconfig"; path = "Target Support Files/Pods-EAguilarEcommerce/Pods-EAguilarEcommerce.release.xcconfig"; sourceTree = "<group>"; };
+		F90A28D62A14308D00958F7A /* ProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoViewModel.swift; sourceTree = "<group>"; };
+		F90A28D82A14312700958F7A /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		F90A28DA2A14313D00958F7A /* Departamento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departamento.swift; sourceTree = "<group>"; };
+		F90A28DC2A14315100958F7A /* Proveedor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proveedor.swift; sourceTree = "<group>"; };
+		F90A28DE2A14315E00958F7A /* Producto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Producto.swift; sourceTree = "<group>"; };
+		F9200F922A1538A2007E2FEA /* ProductoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCell.swift; sourceTree = "<group>"; };
+		F9200F932A1538A2007E2FEA /* ProductoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoCell.xib; sourceTree = "<group>"; };
+		F9200F9F2A15425D007E2FEA /* ProductoGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoGetAllController.swift; sourceTree = "<group>"; };
+		F9200FA12A1544E6007E2FEA /* ProductoFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoFormController.swift; sourceTree = "<group>"; };
 		F93FA5002A01DC090058E3AD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F95A52B729FC56A800F8C4B2 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		F95A52B929FC56CD00F8C4B2 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
@@ -57,7 +75,7 @@
 		F9E07F322A0B09E40036A638 /* RolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolCell.swift; sourceTree = "<group>"; };
 		F9E07F332A0B09E40036A638 /* RolCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RolCell.xib; sourceTree = "<group>"; };
 		F9E07F362A0B0BD00036A638 /* RolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolViewModel.swift; sourceTree = "<group>"; };
-		F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolGetAllController.swift; sourceTree = "<group>"; };
+		F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RolGetAllController.swift; path = ../Usuario/RolGetAllController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +99,20 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F9200F962A153F09007E2FEA /* Producto */ = {
+			isa = PBXGroup;
+			children = (
+				F9200F9F2A15425D007E2FEA /* ProductoGetAllController.swift */,
+				F9200FA12A1544E6007E2FEA /* ProductoFormController.swift */,
+			);
+			path = Producto;
+			sourceTree = "<group>";
+		};
 		F9402E542A04373500F01E95 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9200F962A153F09007E2FEA /* Producto */,
 				F9E07F3C2A0B10F20036A638 /* Rol */,
-				F99E217829FB24210053A4CC /* FormController.swift */,
 				F9402E592A0437D100F01E95 /* Usuario */,
 			);
 			path = Controller;
@@ -97,6 +124,10 @@
 				F95A52B929FC56CD00F8C4B2 /* Usuario.swift */,
 				F93FA5002A01DC090058E3AD /* Result.swift */,
 				F9E07F302A0B08EE0036A638 /* Rol.swift */,
+				F90A28D82A14312700958F7A /* Area.swift */,
+				F90A28DA2A14313D00958F7A /* Departamento.swift */,
+				F90A28DC2A14315100958F7A /* Proveedor.swift */,
+				F90A28DE2A14315E00958F7A /* Producto.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +147,7 @@
 			children = (
 				F97032322A04396F001157C5 /* UsuarioViewModel.swift */,
 				F9E07F362A0B0BD00036A638 /* RolViewModel.swift */,
+				F90A28D62A14308D00958F7A /* ProductoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -131,8 +163,8 @@
 		F9402E592A0437D100F01E95 /* Usuario */ = {
 			isa = PBXGroup;
 			children = (
-				F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */,
 				F97899872A03128F001F445F /* GetAllUsuarioController.swift */,
+				F99E217829FB24210053A4CC /* FormController.swift */,
 			);
 			path = Usuario;
 			sourceTree = "<group>";
@@ -144,6 +176,8 @@
 				F97899892A03166D001F445F /* UsuarioCell.swift */,
 				F9E07F322A0B09E40036A638 /* RolCell.swift */,
 				F9E07F332A0B09E40036A638 /* RolCell.xib */,
+				F9200F922A1538A2007E2FEA /* ProductoCell.swift */,
+				F9200F932A1538A2007E2FEA /* ProductoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -198,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */,
+				F9E07F3D2A0B139C0036A638 /* RolGetAllController.swift */,
 			);
 			path = Rol;
 			sourceTree = "<group>";
@@ -267,6 +302,7 @@
 				F99E217E29FB24230053A4CC /* Assets.xcassets in Resources */,
 				F9E07F352A0B09E40036A638 /* RolCell.xib in Resources */,
 				F99E217C29FB24210053A4CC /* Main.storyboard in Resources */,
+				F9200F952A1538A2007E2FEA /* ProductoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,15 +359,23 @@
 				F93FA5012A01DC090058E3AD /* Result.swift in Sources */,
 				F9E07F372A0B0BD00036A638 /* RolViewModel.swift in Sources */,
 				F99E217929FB24210053A4CC /* FormController.swift in Sources */,
+				F90A28D72A14308D00958F7A /* ProductoViewModel.swift in Sources */,
+				F9200F942A1538A2007E2FEA /* ProductoCell.swift in Sources */,
 				F97899882A03128F001F445F /* GetAllUsuarioController.swift in Sources */,
 				F9641C5F2A0D5A3900F20C3C /* RolFormController.swift in Sources */,
 				F9E07F312A0B08EE0036A638 /* Rol.swift in Sources */,
+				F9200FA22A1544E6007E2FEA /* ProductoFormController.swift in Sources */,
+				F90A28DB2A14313D00958F7A /* Departamento.swift in Sources */,
 				F9E07F3E2A0B139C0036A638 /* RolGetAllController.swift in Sources */,
 				F99E217529FB24210053A4CC /* AppDelegate.swift in Sources */,
 				F978998B2A03166D001F445F /* UsuarioCell.swift in Sources */,
 				F99E217729FB24210053A4CC /* SceneDelegate.swift in Sources */,
 				F97032332A04396F001157C5 /* UsuarioViewModel.swift in Sources */,
+				F9200FA02A15425D007E2FEA /* ProductoGetAllController.swift in Sources */,
 				F95A52BA29FC56CD00F8C4B2 /* Usuario.swift in Sources */,
+				F90A28D92A14312700958F7A /* Area.swift in Sources */,
+				F90A28DD2A14315100958F7A /* Proveedor.swift in Sources */,
+				F90A28DF2A14315E00958F7A /* Producto.swift in Sources */,
 				F95A52B829FC56A800F8C4B2 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

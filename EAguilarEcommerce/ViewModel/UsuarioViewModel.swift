@@ -129,7 +129,7 @@ class UsuarioViewModel
                 sqlite3_bind_text(statement,4,(usuario.ApellidoMaterno! as NSString).utf8String,-1,nil)
                 sqlite3_bind_text(statement,5,(usuario.FechaNacimiento! as NSString).utf8String,-1,nil)
                 sqlite3_bind_text(statement,6,(usuario.Password! as NSString).utf8String,-1,nil)
-                sqlite3_bind_int(statement, 7, Int32(((usuario.Rol?.IdRol! ?? 8) as NSInteger)))
+                sqlite3_bind_int(statement, 7, Int32(((usuario.Rol?.IdRol! ?? 7) as NSInteger)))
                 
                 
                 if(sqlite3_step(statement) == SQLITE_DONE)

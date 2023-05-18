@@ -73,6 +73,7 @@ class FormController: UIViewController {
         }
             if IdUsuario != 0
             {
+                txtidUsuarioOutlet.isHidden = true
                 RecuperarDatos(idUsuario: IdUsuario )
                 btnAction.backgroundColor = UIColor.yellow
                 btnAction.setTitle("Actualizar", for: .normal)

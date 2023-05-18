@@ -1,78 +1,71 @@
 //
-//  GetAllUsuarioController.swift
+//  ProductoGetAllController.swift
 //  EAguilarEcommerce
 //
-//  Created by MacBookMBA17 on 03/05/23.
+//  Created by MacBookMBA17 on 17/05/23.
 //
 
 import UIKit
 import SwipeCellKit
 
-//tabla
-class GetAllUsuarioController: UITableViewController {
+class ProductoGetAllController: UITableViewController {
     
-    var usuarios : [Usuario] = []
+    var productos : [Producto] = []
     let dbManager = DBManager()
-    var IdUsuario : Int = 0
-    
-    var IdRol : Int  = 0
+    var IdProducto : Int = 0
     
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let nib = UINib(nibName: "UsuarioCell", bundle: .main)
+        let nib = UINib(nibName: "ProductoCell", bundle: .main)
         
-        tableView.register(nib , forCellReuseIdentifier: "UsuarioCell")
+        tableView.register(nib, forCellReuseIdentifier: "ProductoCell")
         
-        var result = UsuarioViewModel.GetAll()
+        var result = ProductoViewModel.GetAll()
         
         if result.Correct!
         {
-            //tableView.reloadData()
-            for ObjUsuario in result.Objects!
+            for ObjProducto in result.Objects!
             {
-                let usuario = ObjUsuario as! Usuario
-                usuarios.append(usuario)
+                let producto = ObjProducto as! Producto
+                productos.append(producto)
             }
         }
     }
-    
+
     // MARK: - Table view data source
-    
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
-    
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return usuarios.count
+        return productos.count
     }
+
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UsuarioCell", for: indexPath) as! UsuarioCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductoCell", for: indexPath) as! ProductoCell
+        
         cell.delegate = self
         // Configure the cell...
         
-        cell.txtNombre?.text = usuarios[indexPath.row].Nombre
-        cell.txtApellidoPaterno?.text = usuarios[indexPath.row].ApellidoPaterno
-        cell.txtApellidoMaterno?.text = usuarios[indexPath.row].ApellidoMaterno
-        cell.txtUserName?.text = usuarios[indexPath.row].Username
-        cell.txtFechaNacimiento?.text = usuarios[indexPath.row].FechaNacimiento
-        cell.txtRol?.text = usuarios[indexPath.row].Rol?.Nombre
-        
-        print("el index actual es \(indexPath.row)")
-        // cell.textLabel?.text = usuarios[indexPath.row].Nombre
-        
+        cell.lblNombreOUtlet?.text = productos[indexPath.row].Nombre
+        cell.lblDescripcionOutlet?.text = productos[indexPath.row].Descripcion
+        //cell.lblPrecioUnitarioOutlet.text = //productos[indexPath.row].PrecioUnitario
+        cell.lblDepartamentoOutlet.text = productos[indexPath.row].Departamento?.Nombre
+
         return cell
     }
+
 }
 
-//MARK: implementacion de swipe
-
-extension GetAllUsuarioController : SwipeTableViewCellDelegate{
+extension ProductoGetAllController : SwipeTableViewCellDelegate{
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeCellKit.SwipeActionsOrientation) -> [SwipeCellKit.SwipeAction]?
     {
@@ -89,7 +82,7 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
                 
                 //AlumnoViewModel.Delete(idAlumno : 2)
                 
-                let result  = UsuarioViewModel.Delete(idUsuario: self.usuarios[indexPath.row].IdUsuario!)
+                let result  = ProductoViewModel.Delete(idProducto: self.productos[indexPath.row].IdProducto!)
                 
                 if result.Correct!
                 {
@@ -106,8 +99,8 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
         if orientation == .left {
             let updateAction = SwipeAction(style: .default, title: "Update") { action, indexPath in
                 
-                self.IdUsuario = self.usuarios[indexPath.row].IdUsuario!
-                self.performSegue(withIdentifier: "FormController", sender: self)
+                self.IdProducto = self.productos[indexPath.row].IdProducto!
+                self.performSegue(withIdentifier: "ProductoFormController", sender: self)
                 
                 
                 print("Se ejecuto la funcion de update")
@@ -119,18 +112,16 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
         return nil
     }
     
-    
-    
     func updateUI()
     {
-        var result = UsuarioViewModel.GetAll()
-        usuarios.removeAll()
+        var result = ProductoViewModel.GetAll()
+        productos.removeAll()
         if result.Correct!
         {
-            for objUsuario in result.Objects!
+            for objProducto in result.Objects!
             {
-                let usuario = objUsuario as! Usuario
-                usuarios.append(usuario)
+                let producto = objProducto as! Producto
+                productos.append(producto)
             }
             tableView?.reloadData()
         }
@@ -141,14 +132,12 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
     override func prepare(for segue: UIStoryboardSegue , sender : Any?)
     {
         
-        if segue.identifier == "FormController"
+        if segue.identifier == "ProductoFormController"
         {
-            let formControl = segue.destination as!  FormController
-            formControl.IdUsuario  = self.IdUsuario
+            let formControl = segue.destination as!  ProductoFormController
+            formControl.IdProducto  = self.IdProducto
         }
         
     }
-    
 }
-
 

@@ -39,9 +39,6 @@ class RolFormController: UIViewController {
                 
                 view.addGestureRecognizer(tap)
         
-        
-        
-        
         if IdRol != 0
         {
             RecuperarDatosRol(idRol: IdRol)
@@ -78,9 +75,7 @@ class RolFormController: UIViewController {
         
         
         let opcion = btnAction.titleLabel?.text
-        
-        
-        
+                
         if(btnSeleccionado == "Actualizar")
         {
             //var idUsuario = txtidUsuarioOutlet.text
@@ -133,7 +128,13 @@ class RolFormController: UIViewController {
         txtNombreOutlet.text = (rol.Nombre)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "RolFormController"
+        {
+            let formControl = segue.destination as!  RolFormController
+            formControl.IdRol  = self.IdRol
+        }
+    }
 }
 
 extension RolFormController : UITextFieldDelegate
@@ -153,8 +154,5 @@ extension RolFormController : UITextFieldDelegate
      }
      return false
     }
-    
-    func deslizar()
-    {}
 }
 
