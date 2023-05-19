@@ -26,8 +26,9 @@ class ProductoFormController: UIViewController {
     @IBOutlet weak var txtStockOutlet: UITextField!
     @IBOutlet weak var txtDescripcionOutlet: UITextField!
     
-    @IBOutlet weak var txtProveedorOutlet: UITextField!
-    @IBOutlet weak var txtDepartamentoOutlet: UITextField!
+    @IBOutlet weak var ddlProveedor: DropDown!
+    
+    @IBOutlet weak var ddlDepartamento: DropDown!
     
     @IBOutlet weak var txtIdProductoOutlet: UITextField!
     
@@ -35,6 +36,9 @@ class ProductoFormController: UIViewController {
     let dbManager = DBManager()
     
     var IdProducto : Int = 0
+    var IdProveedor : Int = 0
+    var idDepartamento :Int = 0
+    var StringBase64 : String = ""
     
     let imagePickercontroller  = UIImagePickerController()
 
@@ -42,11 +46,11 @@ class ProductoFormController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        degradado()
         
         imagePickercontroller.delegate = self
         imagePickercontroller.sourceType = .photoLibrary
         imagePickercontroller.isEditing = false
-        
         if IdProducto != 0
         {
             RecuperarDatos(idProducto: IdProducto)
@@ -58,6 +62,67 @@ class ProductoFormController: UIViewController {
             btnActionOutlet.backgroundColor = .green
             btnActionOutlet.setTitle("Agregar", for: .normal)
         }
+        
+        ddlDepartamento.didSelect {selectedText , index , id in
+            self.idDepartamento =  id }
+        
+        ddlDepartamento.optionArray = []
+        ddlDepartamento.optionIds? = []
+        
+        let resultDepartamento = ProductoViewModel.GetAllDepartamento()
+        
+        if resultDepartamento.Correct!{
+            for objDepartamento in resultDepartamento.Objects!{
+                
+                let departamentos = objDepartamento as! Departamento
+                ddlDepartamento.optionArray.append(departamentos.Nombre!)
+                ddlDepartamento.optionIds?.append(departamentos.IdDepartamento!)
+            }
+        }
+        
+        ddlProveedor.didSelect {selectedText , index , id in
+            self.IdProducto =  id }
+         
+        ddlProveedor.optionArray = []
+        ddlProveedor.optionIds? = []
+        
+        let resultProveedor = ProductoViewModel.GetAllProveedor()
+        
+        if resultProveedor.Correct!{
+            for objProveedor in resultProveedor.Objects!{
+                
+                let proveedores = objProveedor as! Proveedor
+                
+                ddlProveedor.optionArray.append(proveedores.Nombre!)
+                ddlProveedor.optionIds?.append(proveedores.IdProveedor!)
+            }
+        }
+    }
+    
+    
+    func degradado()
+    {
+        
+        // basic setup
+        view.backgroundColor = .white
+        navigationItem.title = "Gradient View"
+
+        // Create a new gradient layer
+        let gradientLayer = CAGradientLayer()
+        // Set the colors and locations for the gradient layer
+        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.red.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+
+        // Set the start and end points for the gradient layer
+        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+
+        // Set the frame to the layer
+        gradientLayer.frame = view.frame
+
+        // Add the gradient layer as a sublayer to the background view
+        view.layer.insertSublayer(gradientLayer, at: 0)
+        
     }
     
     
@@ -77,7 +142,7 @@ class ProductoFormController: UIViewController {
         }
         
         let imagen = UIImagenOutlet.image
-        //producto.image = convertToBase64(imagen : imagen)
+        //producto.Imagen = convertToBase64(imagen : imagen)
         
         var producto = Producto()
         
@@ -86,10 +151,11 @@ class ProductoFormController: UIViewController {
         producto.PrecioUnitario = Int(txtPrecioUnitarioOutlet.text!)
         producto.Stock = Int(txtStockOutlet.text!)
         producto.Descripcion = txtDescripcionOutlet.text!
+        //producto.Imagen =
         producto.Proveedor = Proveedor()
-        //producto.Proveedor?.IdProveedor =
+        //producto.Proveedor?.IdProveedor = Int(ddlProveedor)
         producto.Departamento = Departamento()
-        //producto.Departamento?.IdDepartamento =
+        //producto.Departamento?.IdDepartamento = Int(ddlDepartamento)
         //producto.Imagen = UIImagenOutlet
         
         
@@ -135,9 +201,9 @@ class ProductoFormController: UIViewController {
         txtPrecioUnitarioOutlet.text = String(producto.PrecioUnitario!)
         txtStockOutlet.text = String(producto.Stock!)
         txtDescripcionOutlet.text = (producto.Descripcion!)
-        txtProveedorOutlet.text = producto.Proveedor?.Nombre!
-        txtDepartamentoOutlet.text = producto.Departamento?.Nombre!
-        txtProveedorOutlet.text = producto.Proveedor?.Nombre!
+        ddlProveedor.text = producto.Proveedor?.Nombre!
+        ddlDepartamento.text = producto.Departamento?.Nombre!
+        ddlProveedor.text = producto.Proveedor?.Nombre!
     }
     
     
@@ -148,8 +214,8 @@ class ProductoFormController: UIViewController {
         txtPrecioUnitarioOutlet.text = ""
         txtStockOutlet.text = ""
         txtDescripcionOutlet.text = ""
-        txtProveedorOutlet.text = ""
-        txtDepartamentoOutlet.text = ""
+        ddlProveedor.text = ""
+        ddlDepartamento.text = ""
         
 
     }
@@ -162,17 +228,19 @@ extension ProductoFormController : UIImagePickerControllerDelegate, UINavigation
 {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        let data = info[.originalImage]
-        self.UIImagenOutlet.image = info[.originalImage] as! UIImage
-        dismiss(animated: true)
+        let image = info[.originalImage]
+        self.UIImagenOutlet.image = info[.originalImage] as? UIImage
+        self.dismiss(animated: true, completion: nil)
+        
+        convertToBase64(image: image as! UIImage)
         
     }
     
-    func convertToBase64(image : UIImage)->String
+        func convertToBase64(image : UIImage)
     {
-        let base64 = ""
-        //Proceso
-        return base64
         
+        //Proceso
+        let base64 = image.jpegData(compressionQuality: 1.0)
+        self.StringBase64 = base64!.base64EncodedString()
     }
 }

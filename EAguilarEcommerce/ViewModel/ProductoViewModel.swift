@@ -10,11 +10,101 @@ import SQLite3
 
 class ProductoViewModel
 {
+    static func GetAllProveedor()->Result
+    {
+        var context = DBManager()
+        var result = Result()
+        let query = "SELECT  IdProveedor, Nombre FROM Proveedor"
+        
+        var statement : OpaquePointer?
+        
+        do
+        {
+            if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK
+            {
+                result.Objects = []
+                
+                while sqlite3_step(statement) == SQLITE_ROW
+                {
+                    var proveedor = Proveedor()
+                    
+                    proveedor.IdProveedor = Int(String(cString: sqlite3_column_text(statement, 0)))
+                    proveedor.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                    
+                    result.Objects?.append(proveedor)
+                }
+                result.Correct = true
+            }
+            else
+            {
+                result.Correct = false
+                result.ErrorMessage = "Ocurrio un error al realizar el getall"
+            }
+        }
+        catch let ex
+        {
+            result.Correct = false
+            result.ErrorMessage = ex.localizedDescription
+            result.Ex = ex
+        }
+        
+        sqlite3_finalize(statement)
+        sqlite3_close(context.db)
+        return result
+    }
+    
+    
+    
+    static func GetAllDepartamento()->Result
+    {
+        var context = DBManager()
+        var result = Result()
+        let query = "SELECT  IdDepartamento, Nombre FROM Departamento"
+        
+        var statement : OpaquePointer?
+        
+        do
+        {
+            if try sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK
+            {
+                result.Objects = []
+                
+                while sqlite3_step(statement) == SQLITE_ROW
+                {
+                    var departamento = Departamento()
+                    
+                    departamento.IdDepartamento = Int(String(cString: sqlite3_column_text(statement, 0)))
+                    departamento.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                    
+                    result.Objects?.append(departamento)
+                }
+                result.Correct = true
+            }
+            else
+            {
+                result.Correct = false
+                result.ErrorMessage = "Ocurrio un error al realizar el getall"
+            }
+        }
+        catch let ex
+        {
+            result.Correct = false
+            result.ErrorMessage = ex.localizedDescription
+            result.Ex = ex
+        }
+        
+        sqlite3_finalize(statement)
+        sqlite3_close(context.db)
+        return result
+    }
+    
+    
     static func GetAll()->Result
     {
         var context = DBManager()
         var result = Result()
-        let query = "SELECT  Producto.IdProducto, Producto.Nombre, Producto.PrecioUnitario,Producto.Stock, Producto.Descripcion ,Departamento.IdDepartamento, Departamento.Nombre, Proveedor. IdProveedor, Proveedor.Nombre, Proveedor.Telefono FROM Producto INNER JOIN Departamento on Departamento.IdDepartamento = Producto.IdDepartamento INNER JOIN Proveedor on  Proveedor.IdProveedor = Producto.IdProveedor"
+        /*Producto.Imagen ,*/
+        let query = "SELECT  Producto.IdProducto, Producto.Nombre, Producto.PrecioUnitario,Producto.Stock, Producto.Descripcion, Departamento.IdDepartamento, Departamento.Nombre, Proveedor. IdProveedor, Proveedor.Nombre, Proveedor.Telefono FROM Producto INNER JOIN Departamento on Departamento.IdDepartamento = Producto.IdDepartamento INNER JOIN Proveedor on  Proveedor.IdProveedor = Producto.IdProveedor"
         
         var statement : OpaquePointer?
         
@@ -33,7 +123,7 @@ class ProductoViewModel
                     producto.PrecioUnitario =  Int(String(cString: sqlite3_column_text(statement, 2)))
                     producto.Stock = Int(String(cString: sqlite3_column_text(statement, 3)))
                     producto.Descripcion = String(describing: String(cString: sqlite3_column_text(statement, 4)))
-                    //producto.Imagen = String(describing: String(cString: //sqlite3_column_text(statement, 5)))
+                    //producto.Imagen = String(describing: String(cString: sqlite3_column_text(statement, 5)))
                     producto.Departamento = Departamento()
                     producto.Departamento?.IdDepartamento = Int(String(cString: sqlite3_column_text(statement, 5)))
                     producto.Departamento?.Nombre =  String(describing: String(cString: sqlite3_column_text(statement, 6)))

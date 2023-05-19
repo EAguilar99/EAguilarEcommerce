@@ -1860,8 +1860,8 @@
             filePath = "EAguilarEcommerce/ViewModel/ProductoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "GetAll()"
             landmarkType = "7">
             <Locations>
@@ -1894,6 +1894,21 @@
                   startingLineNumber = "15"
                   endingLineNumber = "15"
                   offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "E176739B-FBE7-45BF-9353-2B6A0BBAC742 - 27438a13305dd16e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.ProductoViewModel.GetAll() -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/ProductoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "104"
+                  endingLineNumber = "104"
+                  offsetFromSymbolStart = "160">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1956,8 +1971,8 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "ProductoGetAllController"
             landmarkType = "21">
          </BreakpointContent>
@@ -1972,28 +1987,28 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
             landmarkName = "RecuperarDatos(idProducto:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d1834"
+                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - c13412abd8c01c12"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerce.ProductoFormController.RecuperarDatos(idProducto: Swift.Int) -&gt; ()"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.btnAction(__C.UIButton) -&gt; ()"
                   moduleName = "EAguilarEcommerce"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "112">
+                  startingLineNumber = "175"
+                  endingLineNumber = "175"
+                  offsetFromSymbolStart = "6060">
                </Location>
                <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d278a"
+                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d2cb3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2003,12 +2018,12 @@
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "107"
-                  endingLineNumber = "107"
-                  offsetFromSymbolStart = "112">
+                  startingLineNumber = "194"
+                  endingLineNumber = "194"
+                  offsetFromSymbolStart = "2036">
                </Location>
                <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d2606"
+                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d2cf1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2018,53 +2033,8 @@
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d2606"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerce.ProductoFormController.RecuperarDatos(idProducto: Swift.Int) -&gt; ()"
-                  moduleName = "EAguilarEcommerce"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d251e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerce.ProductoFormController.RecuperarDatos(idProducto: Swift.Int) -&gt; ()"
-                  moduleName = "EAguilarEcommerce"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "136">
-               </Location>
-               <Location
-                  uuid = "7C088C5F-432C-46A3-9C8A-243D45BA708E - 6ec3cdebfc3d2573"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerce.ProductoFormController.RecuperarDatos(idProducto: Swift.Int) -&gt; ()"
-                  moduleName = "EAguilarEcommerce"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
                   offsetFromSymbolStart = "136">
                </Location>
             </Locations>
@@ -2080,8 +2050,8 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "tableView(_:editActionsForRowAt:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2096,8 +2066,8 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "tableView(_:editActionsForRowAt:for:)"
             landmarkType = "7">
             <Locations>
@@ -2131,6 +2101,36 @@
                   endingLineNumber = "102"
                   offsetFromSymbolStart = "180">
                </Location>
+               <Location
+                  uuid = "43D56343-79B8-4408-88ED-B93556FF9092 - bb8b383cf2af1fee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoGetAllController.tableView(_: __C.UITableView, editActionsForRowAt: Foundation.IndexPath, for: SwipeCellKit.SwipeActionsOrientation) -&gt; Swift.Optional&lt;Swift.Array&lt;SwipeCellKit.SwipeAction&gt;&gt;"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "111"
+                  endingLineNumber = "111"
+                  offsetFromSymbolStart = "472">
+               </Location>
+               <Location
+                  uuid = "43D56343-79B8-4408-88ED-B93556FF9092 - 89d3c8839b39e25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (SwipeCellKit.SwipeAction, Foundation.IndexPath) -&gt; () in EAguilarEcommerce.ProductoGetAllController.tableView(_: __C.UITableView, editActionsForRowAt: Foundation.IndexPath, for: SwipeCellKit.SwipeActionsOrientation) -&gt; Swift.Optional&lt;Swift.Array&lt;SwipeCellKit.SwipeAction&gt;&gt;"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "180">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -2144,10 +2144,42 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "btnAction(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F28EE9B5-CF89-4331-9AAC-8A62E951A79F - c13412abd8c01011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.btnAction(__C.UIButton) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "3420">
+               </Location>
+               <Location
+                  uuid = "F28EE9B5-CF89-4331-9AAC-8A62E951A79F - c13412abd8c01011"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.btnAction(__C.UIButton) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "144"
+                  endingLineNumber = "144"
+                  offsetFromSymbolStart = "1116">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2160,10 +2192,42 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "btnRecuperarImagen(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F2ABDD6A-1403-4097-9233-C64052DDCB6F - c13412abd8c0162f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.btnAction(__C.UIButton) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "6656">
+               </Location>
+               <Location
+                  uuid = "F2ABDD6A-1403-4097-9233-C64052DDCB6F - 49894e08efcb4fe4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.btnRecuperarImagen(Any) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2176,28 +2240,28 @@
             filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "imagePickerController(_:didFinishPickingMediaWithInfo:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "35F32265-392F-4FD6-AD2E-1CC50619B569 - 5429c7bdc311e9fe"
+                  uuid = "35F32265-392F-4FD6-AD2E-1CC50619B569 - f9f2c5ec6cbbb698"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerce.ProductoFormController.imagePickerController(_: __C.UIImagePickerController, didFinishPickingMediaWithInfo: Swift.Dictionary&lt;__C.UIImagePickerControllerInfoKey, Any&gt;) -&gt; ()"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.convertToBase64(image: __C.UIImage) -&gt; ()"
                   moduleName = "EAguilarEcommerce"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "164"
-                  endingLineNumber = "164"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "234"
+                  endingLineNumber = "234"
+                  offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "35F32265-392F-4FD6-AD2E-1CC50619B569 - 5429c7bdc311e9df"
+                  uuid = "35F32265-392F-4FD6-AD2E-1CC50619B569 - 5429c7bdc311e159"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -2207,8 +2271,8 @@
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "165"
-                  endingLineNumber = "165"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
                   offsetFromSymbolStart = "124">
                </Location>
             </Locations>
@@ -2224,10 +2288,290 @@
             filePath = "EAguilarEcommerce/ViewModel/ProductoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "GetById(idProducto:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "527978F6-081F-48AF-9F8D-BD3111E080FF - c5886790136e614f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.ProductoViewModel.GetById(idProducto: Swift.Int) -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/ProductoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "527978F6-081F-48AF-9F8D-BD3111E080FF - c5886790136e54e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerce.ProductoViewModel.GetById(idProducto: Swift.Int) -&gt; EAguilarEcommerce.Result"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/ProductoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BEBDF7E-DD56-46A1-89B5-C47612F588CF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "04BEA94B-9896-43BF-9843-8FA7D742F996"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EAguilarEcommerce/Controller/Producto/ProductoGetAllController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E94F064-C8DB-4146-954E-C1648B610899"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - ff4e5569c2ee34a1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "1468">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - 91fba6d1b831b131"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Int, Swift.Int) -&gt; () in EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - ff4e5569c2ee3525"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "1524">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - 91fba6d1b831b0b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Int, Swift.Int) -&gt; () in EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "72"
+                  endingLineNumber = "72"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - ff4e5569c2ee3482"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "1468">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - 91fba6d1b831b0d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Int, Swift.Int) -&gt; () in EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - ff4e5569c2ee325b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "2592">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - 91fba6d1b831b78f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Int, Swift.Int) -&gt; () in EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - ff4e5569c2ee34c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1496">
+               </Location>
+               <Location
+                  uuid = "3E94F064-C8DB-4146-954E-C1648B610899 - 91fba6d1b831b112"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.String, Swift.Int, Swift.Int) -&gt; () in EAguilarEcommerce.ProductoFormController.viewDidLoad() -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "29497A29-051A-4F18-B976-EE2803089D2D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "convertToBase64(image:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "29497A29-051A-4F18-B976-EE2803089D2D - f9f2c5ec6cbbb771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.convertToBase64(image: __C.UIImage) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "243"
+                  endingLineNumber = "243"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "29497A29-051A-4F18-B976-EE2803089D2D - f9f2c5ec6cbbb771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerce.ProductoFormController.convertToBase64(image: __C.UIImage) -&gt; ()"
+                  moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/Controller/Producto/ProductoFormController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "243"
+                  endingLineNumber = "243"
+                  offsetFromSymbolStart = "140">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

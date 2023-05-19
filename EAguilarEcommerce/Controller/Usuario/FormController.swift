@@ -50,13 +50,10 @@ class FormController: UIViewController {
     
     override func viewDidLoad() {
         
-        
         super.viewDidLoad()
         
-        
         ddlRol.didSelect {selectedText , index , id in
-            self.IdRol =  id
-         }
+            self.IdRol =  id }
         
         ddlRol.optionArray = []
         ddlRol.optionIds? = []
@@ -71,6 +68,7 @@ class FormController: UIViewController {
                 ddlRol.optionArray.append(roles.Nombre!)
                 ddlRol.optionIds?.append(roles.IdRol!)
         }
+            
             if IdUsuario != 0
             {
                 txtidUsuarioOutlet.isHidden = true
@@ -85,6 +83,7 @@ class FormController: UIViewController {
             }
         }
     }
+    
         @IBAction func btnsAction(_ sender: UIButton)
         {
             let btnSeleccionado = sender.titleLabel?.text

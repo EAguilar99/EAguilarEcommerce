@@ -59,6 +59,17 @@ class ProductoGetAllController: UITableViewController {
         cell.lblDescripcionOutlet?.text = productos[indexPath.row].Descripcion
         //cell.lblPrecioUnitarioOutlet.text = //productos[indexPath.row].PrecioUnitario
         cell.lblDepartamentoOutlet.text = productos[indexPath.row].Departamento?.Nombre
+        
+        //image
+        if productos[indexPath.row].Imagen == "" || productos[indexPath.row].Imagen == nil
+        {
+            cell.UIImageView.image = UIImage(named:"defaultimage")
+        }
+        else
+        {
+            //let imagenData = //procesoinverso de base 64 a data
+            //cell.UIImageView.image = UIImage(data: imagenData)
+        }
 
         return cell
     }

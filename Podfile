@@ -6,6 +6,7 @@ target 'EAguilarEcommerce' do
   use_frameworks!
 	pod 'SwipeCellKit'
   pod 'iOSDropDown'
+  pod 'IQKeyboardManager'
   # Pods for EAguilarEcommerce
 	
 
