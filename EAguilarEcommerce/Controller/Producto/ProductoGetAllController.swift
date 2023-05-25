@@ -19,6 +19,7 @@ class ProductoGetAllController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let nib = UINib(nibName: "ProductoCell", bundle: .main)
         
         tableView.register(nib, forCellReuseIdentifier: "ProductoCell")
@@ -34,6 +35,7 @@ class ProductoGetAllController: UITableViewController {
             }
         }
     }
+    
 
     // MARK: - Table view data source
 
@@ -57,7 +59,7 @@ class ProductoGetAllController: UITableViewController {
         
         cell.lblNombreOUtlet?.text = productos[indexPath.row].Nombre
         cell.lblDescripcionOutlet?.text = productos[indexPath.row].Descripcion
-        //cell.lblPrecioUnitarioOutlet.text = //productos[indexPath.row].PrecioUnitario
+        cell.lblPrecioUnitarioOutlet.text = String(productos[indexPath.row].PrecioUnitario!)
         cell.lblDepartamentoOutlet.text = productos[indexPath.row].Departamento?.Nombre
         
         //image
@@ -67,8 +69,9 @@ class ProductoGetAllController: UITableViewController {
         }
         else
         {
-            //let imagenData = //procesoinverso de base 64 a data
-            //cell.UIImageView.image = UIImage(data: imagenData)
+            var string = productos[indexPath.row].Imagen!
+            var decode : Data = Data(base64Encoded: string)!
+            cell.UIImageView.image = UIImage(data: decode)
         }
 
         return cell

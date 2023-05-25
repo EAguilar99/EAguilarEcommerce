@@ -1,33 +1,35 @@
 //
-//  LoginController.swift
+//  RegistroVewController.swift
 //  EAguilarEcommerce
 //
-//  Created by MacBookMBA17 on 19/05/23.
+//  Created by MacBookMBA17 on 23/05/23.
 //
 
 import UIKit
+import FirebaseCore
+import Firebase
 import FirebaseAuth
 
-class LoginController: UIViewController {
+class RegistroVewController: UIViewController {
     @IBOutlet weak var txtCorreoOutlet: UITextField!
-    
     @IBOutlet weak var lblCorreoOutlet: UILabel!
-    
     @IBOutlet weak var txtContraseñaOutlet: UITextField!
-    
     @IBOutlet weak var lblContraseñaOutlet: UILabel!
+    @IBOutlet weak var txtValidarContraseñaOutlet: UITextField!
+    @IBOutlet weak var lblValidarContraseñaOultet: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         degradado()
+
         // Do any additional setup after loading the view.
     }
-    
-    @IBAction func btnAction(_ sender: UIButton) {
+    @IBAction func Registro(_ sender: Any) {
         
         guard txtCorreoOutlet.text != "" else
         {
             lblCorreoOutlet.text = "Campo requerido"
-            lblCorreoOutlet.textColor  = .red
+            lblCorreoOutlet.textColor  = .white
             lblCorreoOutlet.isHidden = false
             return
         }
@@ -35,33 +37,49 @@ class LoginController: UIViewController {
         guard txtContraseñaOutlet.text != "" else
         {
             lblContraseñaOutlet.text = "Campo requerido"
-            lblCorreoOutlet.textColor = .red
+            lblCorreoOutlet.textColor = .white
             lblContraseñaOutlet.isHidden = false
             return
         }
         
-        var correo : String = txtCorreoOutlet.text!
-        var contraseña : String = txtContraseñaOutlet.text!
+        guard txtValidarContraseñaOutlet.text != "" else
+        {
+            lblValidarContraseñaOultet.text = "Campo requerido"
+            lblValidarContraseñaOultet.textColor = .white
+            lblValidarContraseñaOultet.isHidden = false
+            return
+        }
         
-        Auth.auth().signIn(withEmail: correo , password: contraseña) { [weak self] authResult, error in
-          guard let strongSelf = self else { return }
-          // ...
-            
-            var loginresult = authResult
+        var correo = txtCorreoOutlet.text!
+        var contraseña = txtContraseñaOutlet.text!
+        var validarContraseña = txtValidarContraseñaOutlet.text!
+        
+        
+        Auth.auth().createUser(withEmail: correo, password: contraseña) { authResult, error in
+          
+            var resultRegistro = authResult
             var errorResult = error
-            if errorResult == nil
+            
+            if contraseña == validarContraseña
             {
-                self!.performSegue(withIdentifier: "usuario", sender: self)
+                if errorResult == nil
+                {
+                    self.performSegue(withIdentifier: "usuario", sender: self)
+                    
+                }
             }
             else
             {
-                    let alert = UIAlertController(title: "Mensaje", message: "Contraseña o usuario no validos ", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "Ok", style: .default)
-                    alert.addAction(action)
-                    self!.present(alert, animated: true)
+                let alert = UIAlertController(title: "Mensaje", message: "Las contraseñas no coinciden ", preferredStyle: .alert)
+                let action = UIAlertAction(title: "Ok", style: .default)
+                alert.addAction(action)
+                self.present(alert, animated: true)
             }
         }
     }
+    
+    
+    
     func degradado()
     {
         // basic setup
@@ -84,8 +102,6 @@ class LoginController: UIViewController {
         // Add the gradient layer as a sublayer to the background view
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
-
     /*
     // MARK: - Navigation
 

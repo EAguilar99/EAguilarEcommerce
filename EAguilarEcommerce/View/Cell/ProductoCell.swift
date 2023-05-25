@@ -22,4 +22,6 @@ class ProductoCell: SwipeTableViewCell {
 
     @IBAction func btnRecuperarImagen(_ sender: UIButton) {
     }
+    
+    
 }

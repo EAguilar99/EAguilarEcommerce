@@ -26,6 +26,8 @@ class ProductoFormController: UIViewController {
     @IBOutlet weak var txtStockOutlet: UITextField!
     @IBOutlet weak var txtDescripcionOutlet: UITextField!
     
+    @IBOutlet weak var ddlArea: DropDown!
+    
     @IBOutlet weak var ddlProveedor: DropDown!
     
     @IBOutlet weak var ddlDepartamento: DropDown!
@@ -39,11 +41,29 @@ class ProductoFormController: UIViewController {
     var IdProveedor : Int = 0
     var idDepartamento :Int = 0
     var StringBase64 : String = ""
+    var IdArea : Int = 0
     
     let imagePickercontroller  = UIImagePickerController()
 
     
     override func viewDidLoad() {
+        
+        ddlArea.didSelect{selectedText, index, id in
+            self.ddlDepartamento.optionIds?.removeAll()
+            self.ddlDepartamento.optionArray.removeAll()
+            self.ddlDepartamento.text = ""
+            var result = DepartamentoViewModel.GetById(idArea: id)
+            if result.Correct == true
+            {
+                for objDepartamento in result.Objects!
+                {
+                    var departamento = objDepartamento as! Departamento
+                    self.ddlDepartamento.optionArray.append(departamento.Nombre!)
+                    self.ddlDepartamento.optionIds?.append(departamento.IdDepartamento!)
+                }
+            }
+            
+        }
         super.viewDidLoad()
         
         degradado()
@@ -63,13 +83,25 @@ class ProductoFormController: UIViewController {
             btnActionOutlet.setTitle("Agregar", for: .normal)
         }
         
+         
+        
+        
+        var result1 = ProveedorViewModel.GetAll()
+        var result2 = AreaViewModel.GetAll()
+        ddlProveedor.optionIds = []
+        ddlProveedor.optionArray = []
+        ddlProveedor.arrowColor = .black
+        ddlProveedor.arrowSize = 10
+        ddlProveedor.isSearchEnable = false
+        ddlProveedor.isExclusiveTouch = true
+        
         ddlDepartamento.didSelect {selectedText , index , id in
             self.idDepartamento =  id }
         
         ddlDepartamento.optionArray = []
         ddlDepartamento.optionIds? = []
         
-        let resultDepartamento = ProductoViewModel.GetAllDepartamento()
+        let resultDepartamento = DepartamentoViewModel.GetAll()
         
         if resultDepartamento.Correct!{
             for objDepartamento in resultDepartamento.Objects!{
@@ -86,7 +118,7 @@ class ProductoFormController: UIViewController {
         ddlProveedor.optionArray = []
         ddlProveedor.optionIds? = []
         
-        let resultProveedor = ProductoViewModel.GetAllProveedor()
+        let resultProveedor = ProveedorViewModel.GetAll()
         
         if resultProveedor.Correct!{
             for objProveedor in resultProveedor.Objects!{
@@ -102,7 +134,6 @@ class ProductoFormController: UIViewController {
     
     func degradado()
     {
-        
         // basic setup
         view.backgroundColor = .white
         navigationItem.title = "Gradient View"
@@ -110,11 +141,11 @@ class ProductoFormController: UIViewController {
         // Create a new gradient layer
         let gradientLayer = CAGradientLayer()
         // Set the colors and locations for the gradient layer
-        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.red.cgColor]
+        gradientLayer.colors = [UIColor.cyan.cgColor, UIColor.lightGray.cgColor]
         gradientLayer.locations = [0.0, 1.0]
 
         // Set the start and end points for the gradient layer
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
 
         // Set the frame to the layer
@@ -122,7 +153,6 @@ class ProductoFormController: UIViewController {
 
         // Add the gradient layer as a sublayer to the background view
         view.layer.insertSublayer(gradientLayer, at: 0)
-        
     }
     
     
@@ -151,12 +181,11 @@ class ProductoFormController: UIViewController {
         producto.PrecioUnitario = Int(txtPrecioUnitarioOutlet.text!)
         producto.Stock = Int(txtStockOutlet.text!)
         producto.Descripcion = txtDescripcionOutlet.text!
-        //producto.Imagen =
+        producto.Imagen = StringBase64
         producto.Proveedor = Proveedor()
-        //producto.Proveedor?.IdProveedor = Int(ddlProveedor)
+        producto.Proveedor?.IdProveedor = ddlProveedor.selectedIndex
         producto.Departamento = Departamento()
-        //producto.Departamento?.IdDepartamento = Int(ddlDepartamento)
-        //producto.Imagen = UIImagenOutlet
+        producto.Departamento?.IdDepartamento = ddlDepartamento.selectedIndex
         
         
         let opcion = btnActionOutlet.titleLabel?.text
@@ -201,9 +230,23 @@ class ProductoFormController: UIViewController {
         txtPrecioUnitarioOutlet.text = String(producto.PrecioUnitario!)
         txtStockOutlet.text = String(producto.Stock!)
         txtDescripcionOutlet.text = (producto.Descripcion!)
-        ddlProveedor.text = producto.Proveedor?.Nombre!
+        StringBase64 = producto.Imagen!
+        ddlArea.text = producto.Departamento?.Area?.Nombre
+        //IdArea = (producto.Departamento?.Area?.IdArea!)!
         ddlDepartamento.text = producto.Departamento?.Nombre!
         ddlProveedor.text = producto.Proveedor?.Nombre!
+       
+        if producto.Imagen == "" || producto.Imagen == nil
+        {
+            UIImagenOutlet.image = UIImage(named: "defaultimage")
+        }
+        else
+        {
+            var string = producto.Imagen!
+            var dataDecode : Data = Data(base64Encoded: string)!
+            UIImagenOutlet.image = UIImage(data: dataDecode)
+        }
+        
     }
     
     

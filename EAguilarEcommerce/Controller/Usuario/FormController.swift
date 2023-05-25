@@ -52,6 +52,8 @@ class FormController: UIViewController {
         
         super.viewDidLoad()
         
+        degradado()
+        
         ddlRol.didSelect {selectedText , index , id in
             self.IdRol =  id }
         
@@ -71,6 +73,7 @@ class FormController: UIViewController {
             
             if IdUsuario != 0
             {
+                limpiarFornulario()
                 txtidUsuarioOutlet.isHidden = true
                 RecuperarDatos(idUsuario: IdUsuario )
                 btnAction.backgroundColor = UIColor.yellow
@@ -84,6 +87,28 @@ class FormController: UIViewController {
         }
     }
     
+    func degradado()
+    {
+        // basic setup
+        view.backgroundColor = .white
+        navigationItem.title = "Gradient View"
+
+        // Create a new gradient layer
+        let gradientLayer = CAGradientLayer()
+        // Set the colors and locations for the gradient layer
+        gradientLayer.colors = [UIColor.cyan.cgColor, UIColor.lightGray.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+
+        // Set the start and end points for the gradient layer
+        gradientLayer.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
+
+        // Set the frame to the layer
+        gradientLayer.frame = view.frame
+
+        // Add the gradient layer as a sublayer to the background view
+        view.layer.insertSublayer(gradientLayer, at: 0)
+    }
         @IBAction func btnsAction(_ sender: UIButton)
         {
             let btnSeleccionado = sender.titleLabel?.text
@@ -227,6 +252,7 @@ class FormController: UIViewController {
             lblApellidoMaterno.text = ""
             
         }
+    
 }
 
 

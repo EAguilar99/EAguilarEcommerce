@@ -148,7 +148,6 @@ extension GetAllUsuarioController : SwipeTableViewCellDelegate{
         }
         
     }
-    
 }
 
 
