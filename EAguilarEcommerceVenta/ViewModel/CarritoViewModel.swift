@@ -40,8 +40,35 @@ class CarritoViewModel{
     func Update(IdAlumno : Int){
         
     }
-    func Delete(IdAlumno : Int){
-        
+    func Delete(_ IdProducto : Int)->Result{
+        var result = Result()
+           
+           let appDelegate = UIApplication.shared.delegate as! AppDelegate
+           
+           let context = appDelegate.persistentContainer.viewContext
+           
+           let response = NSFetchRequest<NSFetchRequestResult>(entityName: "VentaProducto")
+           //response.predicate = NSPredicate(format: "idProducto = %@", IdProducto)
+           response.predicate = NSPredicate(format: "idProducto = %@", String(IdProducto))
+           //response.predicate = NSPredicate(format: "idProducto = %i", IdProducto)
+           
+           do{
+               let test = try context.fetch(response)
+               
+               let ObjectDelete = test[0] as! NSManagedObject
+               context.delete(ObjectDelete)
+               
+               try context.save()
+               
+               result.Correct = true
+               print("Producto eliminado del carrito")
+               
+           }catch let error{
+               result.Correct = false
+               result.ErrorMessage = error.localizedDescription
+               result.Ex = error
+           }
+           return result
     }
     func GetById(IdAlumno : Int){
         

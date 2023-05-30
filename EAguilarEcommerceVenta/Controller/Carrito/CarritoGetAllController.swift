@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwipeCellKit
 
 class CarritoGetAllController: UITableViewController {
     
@@ -42,7 +43,7 @@ class CarritoGetAllController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CarritoCell", for: indexPath) as! CarritoCell
-        //cell.delegate = self
+        cell.delegate = self
         // Configure the cell...
         
         if productosdelCarrito[indexPath.row].producto?.Imagen == "" || productosdelCarrito[indexPath.row].producto?.Imagen == nil
@@ -80,6 +81,57 @@ class CarritoGetAllController: UITableViewController {
         }
     }
 
+//MARK: implementacion de Swipe
+extension CarritoGetAllController : SwipeTableViewCellDelegate{
+    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeCellKit.SwipeActionsOrientation) -> [SwipeCellKit.SwipeAction]?
+    {
+        
+        if orientation == .right
+        {
+            let deleteAction = SwipeAction(style: .destructive, title: "Delete")
+            {
+                action, indexPath in
+                print(indexPath.row)
+                
+                print("Se ejecuto la funcion de borrar")
+                //CODIGO A EJECUTAR
+                
+                //AlumnoViewModel.Delete(idAlumno : 2)
+                
+                let result = self.carritoViewModel.Delete((self.productosdelCarrito[indexPath.row].producto?.IdProducto! ?? 0)!)
+            
+                if result.Correct!
+                {
+                    self.updateUI()
+                }
+                else
+                {
+                    print("Ocurrio un error")
+                }
+            }
+            return [deleteAction]
+        }
+        return nil
+    }
+    
+    
+    
+    func updateUI()
+    {
+        var result = carritoViewModel.GetAll()
+        productosdelCarrito.removeAll()
+        if result.Correct!
+        {
+            for objproducto in result.Objects!
+            {
+                let producto = objproducto as! VentaProductos
+                productosdelCarrito.append(producto)
+            }
+            tableView?.reloadData()
+        }
+    }
+}
     
     
  
