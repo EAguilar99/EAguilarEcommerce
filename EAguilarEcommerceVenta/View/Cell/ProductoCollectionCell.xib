@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductoCollectionCell" id="PeD-Uw-rkC" customClass="ProductoCollectionCell" customModule="EAguilarEcommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="199"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="268" height="199"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="883-qF-uRO">
+                        <rect key="frame" x="0.0" y="0.0" width="268" height="199"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NWw-uK-bqk">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="8NE-Cd-1MM"/>
+                                    <constraint firstAttribute="width" constant="180" id="euj-V9-xRc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDV-TH-Mh0">
+                                <rect key="frame" x="0.0" y="130" width="268" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Descripcion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKh-nS-BQX">
+                                <rect key="frame" x="0.0" y="130" width="268" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0S-i1-FDC">
+                                <rect key="frame" x="0.0" y="144.33333333333334" width="268" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jr2-R1-WNz">
+                                <rect key="frame" x="0.0" y="164.66666666666666" width="268" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="cart.badge.plus" catalog="system">
+                                    <color key="baseBackgroundColor" red="0.032339498289999997" green="0.51565157309999998" blue="0.58432284010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnAgregarCarritoAction:" destination="PeD-Uw-rkC" eventType="touchUpInside" id="Gac-K5-ISp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="Qdk-pT-Z4S"/>
+            <constraints>
+                <constraint firstItem="883-qF-uRO" firstAttribute="leading" secondItem="PeD-Uw-rkC" secondAttribute="leading" id="BNe-ep-mfC"/>
+                <constraint firstItem="883-qF-uRO" firstAttribute="top" secondItem="PeD-Uw-rkC" secondAttribute="top" id="I5g-cZ-nhf"/>
+                <constraint firstAttribute="bottom" secondItem="883-qF-uRO" secondAttribute="bottom" id="RUj-1G-Cfi"/>
+                <constraint firstAttribute="trailing" secondItem="883-qF-uRO" secondAttribute="trailing" id="daK-7V-Q9f"/>
+            </constraints>
+            <size key="customSize" width="268" height="199"/>
+            <connections>
+                <outlet property="UIImagenOutlet" destination="NWw-uK-bqk" id="bNf-d7-L82"/>
+                <outlet property="btnCarrito" destination="jr2-R1-WNz" id="w80-TZ-1sK"/>
+                <outlet property="lblDescripcionOutlet" destination="SKh-nS-BQX" id="AU5-Pt-V5K"/>
+                <outlet property="lblNombreOutlet" destination="eDV-TH-Mh0" id="IrA-2A-WhA"/>
+                <outlet property="lblPrecioOutlet" destination="j0S-i1-FDC" id="Odq-06-Avv"/>
+            </connections>
+            <point key="canvasLocation" x="-212.21374045801525" y="77.112676056338032"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cart.badge.plus" catalog="system" width="128" height="103"/>
+    </resources>
+</document>

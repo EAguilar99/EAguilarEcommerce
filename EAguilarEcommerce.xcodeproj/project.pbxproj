@@ -23,12 +23,41 @@
 		F92B45622A1FF0220084697F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F92B45612A1FF0220084697F /* FirebaseAuth */; };
 		F92B45642A1FF0220084697F /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F92B45632A1FF0220084697F /* FirebaseCrashlytics */; };
 		F92B45662A1FF0220084697F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F92B45652A1FF0220084697F /* FirebaseStorage */; };
+		F92B456E2A1FF10E0084697F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B456D2A1FF10E0084697F /* AppDelegate.swift */; };
+		F92B45702A1FF10E0084697F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B456F2A1FF10E0084697F /* SceneDelegate.swift */; };
+		F92B45752A1FF10E0084697F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B45732A1FF10E0084697F /* Main.storyboard */; };
+		F92B45772A1FF10F0084697F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F92B45762A1FF10F0084697F /* Assets.xcassets */; };
+		F92B457A2A1FF10F0084697F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F92B45782A1FF10F0084697F /* LaunchScreen.storyboard */; };
+		F92B457F2A1FF1400084697F /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B729FC56A800F8C4B2 /* DBManager.swift */; };
+		F92B45802A1FF1400084697F /* UsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97032322A04396F001157C5 /* UsuarioViewModel.swift */; };
+		F92B45812A1FF1400084697F /* RolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F362A0B0BD00036A638 /* RolViewModel.swift */; };
+		F92B45822A1FF1400084697F /* ProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28D62A14308D00958F7A /* ProductoViewModel.swift */; };
+		F92B45832A1FF1400084697F /* ProveedorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AF5762A1BFDD5005B10D2 /* ProveedorViewModel.swift */; };
+		F92B45842A1FF1400084697F /* DepartamentoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AF5782A1BFE4A005B10D2 /* DepartamentoViewModel.swift */; };
+		F92B45852A1FF1400084697F /* AreaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90AF57A2A1BFEAD005B10D2 /* AreaViewModel.swift */; };
+		F92B45862A1FF1400084697F /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B929FC56CD00F8C4B2 /* Usuario.swift */; };
+		F92B45872A1FF1400084697F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FA5002A01DC090058E3AD /* Result.swift */; };
+		F92B45882A1FF1400084697F /* Rol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F302A0B08EE0036A638 /* Rol.swift */; };
+		F92B45892A1FF1400084697F /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28D82A14312700958F7A /* Area.swift */; };
+		F92B458A2A1FF1400084697F /* Departamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DA2A14313D00958F7A /* Departamento.swift */; };
+		F92B458B2A1FF1400084697F /* Proveedor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DC2A14315100958F7A /* Proveedor.swift */; };
+		F92B458C2A1FF1400084697F /* Producto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90A28DE2A14315E00958F7A /* Producto.swift */; };
+		F92B459C2A2037290084697F /* AreaGetAllControllerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B459B2A2037290084697F /* AreaGetAllControllerController.swift */; };
 		F93FA5012A01DC090058E3AD /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93FA5002A01DC090058E3AD /* Result.swift */; };
 		F948909E2A180CCD006CAE75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F948909D2A180CCD006CAE75 /* GoogleService-Info.plist */; };
 		F94890B02A181F99006CAE75 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94890AF2A181F99006CAE75 /* LoginController.swift */; };
+		F94A44C42A2576220009419B /* ProductoCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94A44C22A2576220009419B /* ProductoCollectionCell.swift */; };
+		F94A44C52A2576220009419B /* ProductoCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F94A44C32A2576220009419B /* ProductoCollectionCell.xib */; };
+		F94C3B9B2A214D53003C87A4 /* CarritoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94C3B9A2A214D53003C87A4 /* CarritoViewModel.swift */; };
+		F94C3BA02A2165E3003C87A4 /* CarritoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94C3B9E2A2165E3003C87A4 /* CarritoCell.swift */; };
+		F94C3BA12A2165E3003C87A4 /* CarritoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F94C3B9F2A2165E3003C87A4 /* CarritoCell.xib */; };
+		F95401442A25075E00E4A476 /* VentaProductos.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95401432A25075E00E4A476 /* VentaProductos.swift */; };
+		F954014B2A250F0600E4A476 /* CarritoGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F954014A2A250F0600E4A476 /* CarritoGetAllController.swift */; };
 		F95A52B829FC56A800F8C4B2 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B729FC56A800F8C4B2 /* DBManager.swift */; };
 		F95A52BA29FC56CD00F8C4B2 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A52B929FC56CD00F8C4B2 /* Usuario.swift */; };
 		F9641C5F2A0D5A3900F20C3C /* RolFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */; };
+		F964D0822A266588002552D2 /* CarritoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F964D0802A266588002552D2 /* CarritoCell.swift */; };
+		F964D0832A266588002552D2 /* CarritoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F964D0812A266588002552D2 /* CarritoCell.xib */; };
 		F97032332A04396F001157C5 /* UsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97032322A04396F001157C5 /* UsuarioViewModel.swift */; };
 		F97899882A03128F001F445F /* GetAllUsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97899872A03128F001F445F /* GetAllUsuarioController.swift */; };
 		F978998B2A03166D001F445F /* UsuarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97899892A03166D001F445F /* UsuarioCell.swift */; };
@@ -47,6 +76,18 @@
 		F99E217C29FB24210053A4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99E217A29FB24210053A4CC /* Main.storyboard */; };
 		F99E217E29FB24230053A4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99E217D29FB24230053A4CC /* Assets.xcassets */; };
 		F99E218129FB24230053A4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99E217F29FB24230053A4CC /* LaunchScreen.storyboard */; };
+		F9B0C7942A2111C6007AC53D /* DepartamentoGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C7932A2111C6007AC53D /* DepartamentoGetAllController.swift */; };
+		F9B0C7962A2112A7007AC53D /* ProductoGetAllController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C7952A2112A7007AC53D /* ProductoGetAllController.swift */; };
+		F9B0C7992A211383007AC53D /* AreaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C7972A211383007AC53D /* AreaCell.swift */; };
+		F9B0C79A2A211383007AC53D /* AreaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9B0C7982A211383007AC53D /* AreaCell.xib */; };
+		F9B0C7A02A211B1B007AC53D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C79F2A211B1A007AC53D /* LoginController.swift */; };
+		F9B0C7A22A211B5C007AC53D /* RegistroVewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C7A12A211B5C007AC53D /* RegistroVewController.swift */; };
+		F9B0C7A42A211BB3007AC53D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F9B0C7A32A211BB3007AC53D /* FirebaseAnalytics */; };
+		F9B0C7A62A211BB3007AC53D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9B0C7A52A211BB3007AC53D /* FirebaseAuth */; };
+		F9B0C7A82A211BB3007AC53D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = F9B0C7A72A211BB3007AC53D /* FirebaseCrashlytics */; };
+		F9B0C7AA2A211BB3007AC53D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = F9B0C7A92A211BB3007AC53D /* FirebaseStorage */; };
+		F9B0C7AB2A211C82007AC53D /* GoogleService-Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F948909D2A180CCD006CAE75 /* GoogleService-Info.plist */; };
+		F9B0C7AE2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9B0C7AC2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodeld */; };
 		F9E07F312A0B08EE0036A638 /* Rol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F302A0B08EE0036A638 /* Rol.swift */; };
 		F9E07F342A0B09E40036A638 /* RolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E07F322A0B09E40036A638 /* RolCell.swift */; };
 		F9E07F352A0B09E40036A638 /* RolCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E07F332A0B09E40036A638 /* RolCell.xib */; };
@@ -70,12 +111,31 @@
 		F9200F932A1538A2007E2FEA /* ProductoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoCell.xib; sourceTree = "<group>"; };
 		F9200F9F2A15425D007E2FEA /* ProductoGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoGetAllController.swift; sourceTree = "<group>"; };
 		F9200FA12A1544E6007E2FEA /* ProductoFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoFormController.swift; sourceTree = "<group>"; };
+		F92B456B2A1FF10E0084697F /* EAguilarEcommerceVenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EAguilarEcommerceVenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92B456D2A1FF10E0084697F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F92B456F2A1FF10E0084697F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F92B45742A1FF10E0084697F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F92B45762A1FF10F0084697F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F92B45792A1FF10F0084697F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F92B457B2A1FF10F0084697F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F92B458E2A1FF1B00084697F /* EAguilarEcommerce.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EAguilarEcommerce.entitlements; sourceTree = "<group>"; };
+		F92B458F2A1FF1E70084697F /* EAguilarEcommerceVenta.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EAguilarEcommerceVenta.entitlements; sourceTree = "<group>"; };
+		F92B459B2A2037290084697F /* AreaGetAllControllerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaGetAllControllerController.swift; sourceTree = "<group>"; };
 		F93FA5002A01DC090058E3AD /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		F948909D2A180CCD006CAE75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F94890AF2A181F99006CAE75 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F94A44C22A2576220009419B /* ProductoCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoCollectionCell.swift; sourceTree = "<group>"; };
+		F94A44C32A2576220009419B /* ProductoCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductoCollectionCell.xib; sourceTree = "<group>"; };
+		F94C3B9A2A214D53003C87A4 /* CarritoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoViewModel.swift; sourceTree = "<group>"; };
+		F94C3B9E2A2165E3003C87A4 /* CarritoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoCell.swift; sourceTree = "<group>"; };
+		F94C3B9F2A2165E3003C87A4 /* CarritoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarritoCell.xib; sourceTree = "<group>"; };
+		F95401432A25075E00E4A476 /* VentaProductos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentaProductos.swift; sourceTree = "<group>"; };
+		F954014A2A250F0600E4A476 /* CarritoGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoGetAllController.swift; sourceTree = "<group>"; };
 		F95A52B729FC56A800F8C4B2 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		F95A52B929FC56CD00F8C4B2 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		F9641C5E2A0D5A3900F20C3C /* RolFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolFormController.swift; sourceTree = "<group>"; };
+		F964D0802A266588002552D2 /* CarritoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarritoCell.swift; sourceTree = "<group>"; };
+		F964D0812A266588002552D2 /* CarritoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarritoCell.xib; sourceTree = "<group>"; };
 		F97032322A04396F001157C5 /* UsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewModel.swift; sourceTree = "<group>"; };
 		F97767E82A0DB5FA001F6A83 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F97899872A03128F001F445F /* GetAllUsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllUsuarioController.swift; sourceTree = "<group>"; };
@@ -99,6 +159,13 @@
 		F99E218229FB24230053A4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A0A33C2A0DB8100048FF15 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A0A3402A0DB8F90048FF15 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9B0C7932A2111C6007AC53D /* DepartamentoGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartamentoGetAllController.swift; sourceTree = "<group>"; };
+		F9B0C7952A2112A7007AC53D /* ProductoGetAllController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductoGetAllController.swift; sourceTree = "<group>"; };
+		F9B0C7972A211383007AC53D /* AreaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCell.swift; sourceTree = "<group>"; };
+		F9B0C7982A211383007AC53D /* AreaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaCell.xib; sourceTree = "<group>"; };
+		F9B0C79F2A211B1A007AC53D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F9B0C7A12A211B5C007AC53D /* RegistroVewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroVewController.swift; sourceTree = "<group>"; };
+		F9B0C7AD2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EAguilarEcommerce.xcdatamodel; sourceTree = "<group>"; };
 		F9C2809229FC6348002DD699 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F9E07F302A0B08EE0036A638 /* Rol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rol.swift; sourceTree = "<group>"; };
 		F9E07F322A0B09E40036A638 /* RolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolCell.swift; sourceTree = "<group>"; };
@@ -108,6 +175,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F92B45682A1FF10E0084697F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B0C7A82A211BB3007AC53D /* FirebaseCrashlytics in Frameworks */,
+				F9B0C7AA2A211BB3007AC53D /* FirebaseStorage in Frameworks */,
+				F9B0C7A42A211BB3007AC53D /* FirebaseAnalytics in Frameworks */,
+				F9B0C7A62A211BB3007AC53D /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F99E216E29FB24210053A4CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +217,106 @@
 				F98405042A1EA22A006BF14B /* ProductoCollectionController.swift */,
 			);
 			path = Producto;
+			sourceTree = "<group>";
+		};
+		F92B456C2A1FF10E0084697F /* EAguilarEcommerceVenta */ = {
+			isa = PBXGroup;
+			children = (
+				F95401422A25073A00E4A476 /* Model */,
+				F94C3B992A214D32003C87A4 /* ViewModel */,
+				F92B45912A2035110084697F /* Controller */,
+				F92B45902A2034E90084697F /* View */,
+				F92B458F2A1FF1E70084697F /* EAguilarEcommerceVenta.entitlements */,
+				F92B456D2A1FF10E0084697F /* AppDelegate.swift */,
+				F92B456F2A1FF10E0084697F /* SceneDelegate.swift */,
+				F92B45762A1FF10F0084697F /* Assets.xcassets */,
+				F92B45782A1FF10F0084697F /* LaunchScreen.storyboard */,
+				F92B457B2A1FF10F0084697F /* Info.plist */,
+			);
+			path = EAguilarEcommerceVenta;
+			sourceTree = "<group>";
+		};
+		F92B45902A2034E90084697F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F92B45932A20352C0084697F /* Cell */,
+				F92B45732A1FF10E0084697F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F92B45912A2035110084697F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F95401452A250DA700E4A476 /* Carrito */,
+				F92B45992A2036D70084697F /* Usuario */,
+				F92B45982A2036D00084697F /* Rol */,
+				F92B45972A2036C50084697F /* Producto */,
+				F92B45962A2036BC0084697F /* Login */,
+				F92B45952A2036B20084697F /* Departamentos */,
+				F92B45942A2036A20084697F /* Areas */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F92B45932A20352C0084697F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0C7972A211383007AC53D /* AreaCell.swift */,
+				F9B0C7982A211383007AC53D /* AreaCell.xib */,
+				F94A44C22A2576220009419B /* ProductoCollectionCell.swift */,
+				F94A44C32A2576220009419B /* ProductoCollectionCell.xib */,
+				F964D0802A266588002552D2 /* CarritoCell.swift */,
+				F964D0812A266588002552D2 /* CarritoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F92B45942A2036A20084697F /* Areas */ = {
+			isa = PBXGroup;
+			children = (
+				F92B459B2A2037290084697F /* AreaGetAllControllerController.swift */,
+			);
+			path = Areas;
+			sourceTree = "<group>";
+		};
+		F92B45952A2036B20084697F /* Departamentos */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0C7932A2111C6007AC53D /* DepartamentoGetAllController.swift */,
+			);
+			path = Departamentos;
+			sourceTree = "<group>";
+		};
+		F92B45962A2036BC0084697F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0C79F2A211B1A007AC53D /* LoginController.swift */,
+				F9B0C7A12A211B5C007AC53D /* RegistroVewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F92B45972A2036C50084697F /* Producto */ = {
+			isa = PBXGroup;
+			children = (
+				F9B0C7952A2112A7007AC53D /* ProductoGetAllController.swift */,
+			);
+			path = Producto;
+			sourceTree = "<group>";
+		};
+		F92B45982A2036D00084697F /* Rol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Rol;
+			sourceTree = "<group>";
+		};
+		F92B45992A2036D70084697F /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usuario;
 			sourceTree = "<group>";
 		};
 		F9402E542A04373500F01E95 /* Controller */ = {
@@ -217,6 +395,30 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F94C3B992A214D32003C87A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F94C3B9A2A214D53003C87A4 /* CarritoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F95401422A25073A00E4A476 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F95401432A25075E00E4A476 /* VentaProductos.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F95401452A250DA700E4A476 /* Carrito */ = {
+			isa = PBXGroup;
+			children = (
+				F954014A2A250F0600E4A476 /* CarritoGetAllController.swift */,
+			);
+			path = Carrito;
+			sourceTree = "<group>";
+		};
 		F97032342A043AE3001157C5 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +432,8 @@
 				F98206252A1D752600C46BEB /* AreaCell.xib */,
 				F98405062A1EA2DC006BF14B /* ProductoCollectionCell.swift */,
 				F98405072A1EA2DC006BF14B /* ProductoCollectionCell.xib */,
+				F94C3B9E2A2165E3003C87A4 /* CarritoCell.swift */,
+				F94C3B9F2A2165E3003C87A4 /* CarritoCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -253,7 +457,9 @@
 		F99E216829FB24210053A4CC = {
 			isa = PBXGroup;
 			children = (
+				F9B0C7AC2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodeld */,
 				F99E217329FB24210053A4CC /* EAguilarEcommerce */,
+				F92B456C2A1FF10E0084697F /* EAguilarEcommerceVenta */,
 				F99E217229FB24210053A4CC /* Products */,
 				F9C2809129FC6347002DD699 /* Frameworks */,
 				1B9291A2A7E282930CEB39CF /* Pods */,
@@ -264,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				F99E217129FB24210053A4CC /* EAguilarEcommerce.app */,
+				F92B456B2A1FF10E0084697F /* EAguilarEcommerceVenta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +478,7 @@
 		F99E217329FB24210053A4CC /* EAguilarEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F92B458E2A1FF1B00084697F /* EAguilarEcommerce.entitlements */,
 				F9402E582A04378600F01E95 /* Util */,
 				F9402E572A04377500F01E95 /* ViewModel */,
 				F9402E562A04376600F01E95 /* View */,
@@ -309,6 +517,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F92B456A2A1FF10E0084697F /* EAguilarEcommerceVenta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F92B457C2A1FF10F0084697F /* Build configuration list for PBXNativeTarget "EAguilarEcommerceVenta" */;
+			buildPhases = (
+				F92B45672A1FF10E0084697F /* Sources */,
+				F92B45682A1FF10E0084697F /* Frameworks */,
+				F92B45692A1FF10E0084697F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EAguilarEcommerceVenta;
+			packageProductDependencies = (
+				F9B0C7A32A211BB3007AC53D /* FirebaseAnalytics */,
+				F9B0C7A52A211BB3007AC53D /* FirebaseAuth */,
+				F9B0C7A72A211BB3007AC53D /* FirebaseCrashlytics */,
+				F9B0C7A92A211BB3007AC53D /* FirebaseStorage */,
+			);
+			productName = EAguilarEcommerceVenta;
+			productReference = F92B456B2A1FF10E0084697F /* EAguilarEcommerceVenta.app */;
+			productType = "com.apple.product-type.application";
+		};
 		F99E217029FB24210053A4CC /* EAguilarEcommerce */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F99E218529FB24230053A4CC /* Build configuration list for PBXNativeTarget "EAguilarEcommerce" */;
@@ -343,6 +574,9 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					F92B456A2A1FF10E0084697F = {
+						CreatedOnToolsVersion = 14.3;
+					};
 					F99E217029FB24210053A4CC = {
 						CreatedOnToolsVersion = 14.3;
 					};
@@ -365,11 +599,25 @@
 			projectRoot = "";
 			targets = (
 				F99E217029FB24210053A4CC /* EAguilarEcommerce */,
+				F92B456A2A1FF10E0084697F /* EAguilarEcommerceVenta */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F92B45692A1FF10E0084697F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F92B457A2A1FF10F0084697F /* LaunchScreen.storyboard in Resources */,
+				F94A44C52A2576220009419B /* ProductoCollectionCell.xib in Resources */,
+				F92B45772A1FF10F0084697F /* Assets.xcassets in Resources */,
+				F9B0C79A2A211383007AC53D /* AreaCell.xib in Resources */,
+				F964D0832A266588002552D2 /* CarritoCell.xib in Resources */,
+				F92B45752A1FF10E0084697F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F99E216F29FB24210053A4CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +628,7 @@
 				F9E07F352A0B09E40036A638 /* RolCell.xib in Resources */,
 				F98405092A1EA2DC006BF14B /* ProductoCollectionCell.xib in Resources */,
 				F99E217C29FB24210053A4CC /* Main.storyboard in Resources */,
+				F94C3BA12A2165E3003C87A4 /* CarritoCell.xib in Resources */,
 				F9200F952A1538A2007E2FEA /* ProductoCell.xib in Resources */,
 				F948909E2A180CCD006CAE75 /* GoogleService-Info.plist in Resources */,
 				F98206272A1D752600C46BEB /* AreaCell.xib in Resources */,
@@ -431,6 +680,42 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F92B45672A1FF10E0084697F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9B0C7AB2A211C82007AC53D /* GoogleService-Info.plist in Sources */,
+				F964D0822A266588002552D2 /* CarritoCell.swift in Sources */,
+				F9B0C7942A2111C6007AC53D /* DepartamentoGetAllController.swift in Sources */,
+				F95401442A25075E00E4A476 /* VentaProductos.swift in Sources */,
+				F9B0C7AE2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodeld in Sources */,
+				F92B457F2A1FF1400084697F /* DBManager.swift in Sources */,
+				F92B45802A1FF1400084697F /* UsuarioViewModel.swift in Sources */,
+				F94C3B9B2A214D53003C87A4 /* CarritoViewModel.swift in Sources */,
+				F92B45812A1FF1400084697F /* RolViewModel.swift in Sources */,
+				F94A44C42A2576220009419B /* ProductoCollectionCell.swift in Sources */,
+				F9B0C7A22A211B5C007AC53D /* RegistroVewController.swift in Sources */,
+				F92B45822A1FF1400084697F /* ProductoViewModel.swift in Sources */,
+				F92B45832A1FF1400084697F /* ProveedorViewModel.swift in Sources */,
+				F92B45842A1FF1400084697F /* DepartamentoViewModel.swift in Sources */,
+				F954014B2A250F0600E4A476 /* CarritoGetAllController.swift in Sources */,
+				F92B459C2A2037290084697F /* AreaGetAllControllerController.swift in Sources */,
+				F92B45852A1FF1400084697F /* AreaViewModel.swift in Sources */,
+				F92B45862A1FF1400084697F /* Usuario.swift in Sources */,
+				F9B0C7A02A211B1B007AC53D /* LoginController.swift in Sources */,
+				F92B45872A1FF1400084697F /* Result.swift in Sources */,
+				F92B45882A1FF1400084697F /* Rol.swift in Sources */,
+				F92B45892A1FF1400084697F /* Area.swift in Sources */,
+				F9B0C7962A2112A7007AC53D /* ProductoGetAllController.swift in Sources */,
+				F9B0C7992A211383007AC53D /* AreaCell.swift in Sources */,
+				F92B458A2A1FF1400084697F /* Departamento.swift in Sources */,
+				F92B458B2A1FF1400084697F /* Proveedor.swift in Sources */,
+				F92B458C2A1FF1400084697F /* Producto.swift in Sources */,
+				F92B456E2A1FF10E0084697F /* AppDelegate.swift in Sources */,
+				F92B45702A1FF10E0084697F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F99E216D29FB24210053A4CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,6 +740,7 @@
 				F99E217529FB24210053A4CC /* AppDelegate.swift in Sources */,
 				F978998B2A03166D001F445F /* UsuarioCell.swift in Sources */,
 				F98405082A1EA2DC006BF14B /* ProductoCollectionCell.swift in Sources */,
+				F94C3BA02A2165E3003C87A4 /* CarritoCell.swift in Sources */,
 				F98206292A1D762200C46BEB /* AreaGetAllController.swift in Sources */,
 				F99E217729FB24210053A4CC /* SceneDelegate.swift in Sources */,
 				F98405052A1EA22A006BF14B /* ProductoCollectionController.swift in Sources */,
@@ -473,6 +759,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		F92B45732A1FF10E0084697F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92B45742A1FF10E0084697F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F92B45782A1FF10F0084697F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F92B45792A1FF10F0084697F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		F99E217A29FB24210053A4CC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -492,6 +794,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F92B457D2A1FF10F0084697F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EAguilarEcommerceVenta/EAguilarEcommerceVenta.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DR5PWA9VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EAguilarEcommerceVenta/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.EAguilarEcommerceVenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F92B457E2A1FF10F0084697F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EAguilarEcommerceVenta/EAguilarEcommerceVenta.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DR5PWA9VP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EAguilarEcommerceVenta/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.digis.EAguilarEcommerceVenta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F99E218329FB24230053A4CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -612,8 +972,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EAguilarEcommerce/EAguilarEcommerce.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DR5PWA9VP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EAguilarEcommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -641,8 +1003,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = EAguilarEcommerce/EAguilarEcommerce.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8DR5PWA9VP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EAguilarEcommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -667,6 +1031,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F92B457C2A1FF10F0084697F /* Build configuration list for PBXNativeTarget "EAguilarEcommerceVenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F92B457D2A1FF10F0084697F /* Debug */,
+				F92B457E2A1FF10F0084697F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F99E216C29FB24210053A4CC /* Build configuration list for PBXProject "EAguilarEcommerce" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -714,7 +1087,40 @@
 			package = F948909F2A181DE9006CAE75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
 		};
+		F9B0C7A32A211BB3007AC53D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F948909F2A181DE9006CAE75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F9B0C7A52A211BB3007AC53D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F948909F2A181DE9006CAE75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		F9B0C7A72A211BB3007AC53D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F948909F2A181DE9006CAE75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		F9B0C7A92A211BB3007AC53D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F948909F2A181DE9006CAE75 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		F9B0C7AC2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9B0C7AD2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodel */,
+			);
+			currentVersion = F9B0C7AD2A211E4F007AC53D /* EAguilarEcommerce.xcdatamodel */;
+			path = EAguilarEcommerce.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F99E216929FB24210053A4CC /* Project object */;
 }

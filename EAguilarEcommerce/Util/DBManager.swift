@@ -20,10 +20,14 @@ class DBManager
         
      
         func Get() -> OpaquePointer?{
-            let filePath = try! FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(path)
-            if(sqlite3_open(filePath.path, &db) == SQLITE_OK){
+            
+            let storeURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.EAguilarEcommerce")!.appendingPathComponent(path)
+            
+            //let filePath = try! FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent(path)
+            
+            if(sqlite3_open(storeURL.path, &db) == SQLITE_OK){
                 print("Conexion exitosa")
-                print(filePath)
+                print(storeURL)
                 return db
             }else{
                 print("Fallo la conexión")

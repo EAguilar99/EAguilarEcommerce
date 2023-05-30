@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "D_NQ_NP_662334-MLA49976179057_052022-O.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

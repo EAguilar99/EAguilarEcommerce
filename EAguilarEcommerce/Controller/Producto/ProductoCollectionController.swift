@@ -16,6 +16,7 @@ class ProductoCollectionController: UICollectionViewController {
     
     var IdProducto = 0
     var IdDepartamento = 0
+    var Nombre = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,32 @@ class ProductoCollectionController: UICollectionViewController {
         
         collectionView.register(nib, forCellWithReuseIdentifier: "ProductoCollectionCell")
         
-        var result = ProductoViewModel.GetByIdDepartamento(idDepartamento: IdDepartamento)
-        
-        if result.Correct!
+        if Nombre == ""
         {
-            for ObjProducto in result.Objects!
+            var result = ProductoViewModel.GetByIdDepartamento(idDepartamento: IdDepartamento)
+            
+            if result.Correct!
             {
-                let producto = ObjProducto as! Producto
-                Productos.append(producto)
+                for ObjProducto in result.Objects!
+                {
+                    let producto = ObjProducto as! Producto
+                    Productos.append(producto)
+                }
             }
+        }
+        else if Nombre != ""
+        {
+            var result = ProductoViewModel.GetByIdNombre(Nombre: Nombre)
+            
+            if result.Correct!
+            {
+                for objproducto in result.Objects!
+                {
+                    let producto = objproducto as! Producto
+                    Productos.append(producto)
+                }
+            }
+            
         }
         
 

@@ -10,7 +10,7 @@ import SQLite3
 
 class ProductoViewModel
 {
-   
+    var IdProducto : Int = 0
     
     static func GetAll()->Result
     {
@@ -260,6 +260,60 @@ class ProductoViewModel
         
         var query =
         "SELECT  IdProducto, Nombre, PrecioUnitario,Stock, Descripcion,Imagen, IdDepartamento FROM Producto WHERE IdDepartamento = \(idDepartamento)"
+        
+        do
+        {
+            if try(sqlite3_prepare_v2(context.db, query, -1, &statement, nil) == SQLITE_OK)
+            {
+                let producto = Producto()
+                if try(sqlite3_step(statement) == SQLITE_ROW)
+                {
+                    result.Objects = []
+                    
+                    while sqlite3_step(statement) == SQLITE_ROW
+                    {
+                        var producto = Producto()
+                    
+                        producto.IdProducto = Int(sqlite3_column_int(statement, 0))
+                        producto.Nombre = String(describing: String(cString: sqlite3_column_text(statement, 1)))
+                        producto.PrecioUnitario = Int(sqlite3_column_int(statement, 2))
+                        producto.Stock = Int(sqlite3_column_int(statement, 3))
+                        producto.Descripcion = String(describing: String(cString: sqlite3_column_text(statement, 4)))
+                        producto.Imagen = String(describing: String(cString: sqlite3_column_text(statement, 5)))
+                        producto.Departamento?.IdDepartamento = Int(sqlite3_column_int(statement, 6))
+                        
+                        result.Objects?.append(producto)
+                    }
+                    result.Correct = true
+                }
+                else
+                {
+                    result.Correct = false
+                    result.ErrorMessage = "Ocurrio un error "
+                }
+
+            }
+        }
+        catch let ex
+        {
+            result.Correct = false
+            result.ErrorMessage = ex.localizedDescription
+            result.Ex = ex
+        }
+        sqlite3_finalize(statement)
+        sqlite3_close(context.db)
+        return result
+    }
+    
+    
+    static func GetByIdNombre(Nombre : String )->Result
+    {
+        var context = DBManager()
+        var result = Result()
+        var statement : OpaquePointer? = nil
+        
+        var query =
+        "SELECT  IdProducto, Nombre, PrecioUnitario,Stock, Descripcion,Imagen FROM Producto WHERE Nombre Like '%\(Nombre)%'"
         
         do
         {

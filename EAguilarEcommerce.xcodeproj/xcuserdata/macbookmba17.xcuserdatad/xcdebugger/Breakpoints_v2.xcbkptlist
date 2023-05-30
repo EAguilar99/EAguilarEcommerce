@@ -734,6 +734,21 @@
                   endingLineNumber = "66"
                   offsetFromSymbolStart = "196">
                </Location>
+               <Location
+                  uuid = "0F33122D-C73C-4420-95B8-59B3D4384ABC - 688a193ee9e73da0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerceVenta.UsuarioViewModel.GetByid(idUsuario: Swift.Int) -&gt; EAguilarEcommerceVenta.Result"
+                  moduleName = "EAguilarEcommerceVenta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "196">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -843,6 +858,21 @@
                   endingLineNumber = "118"
                   offsetFromSymbolStart = "124">
                </Location>
+               <Location
+                  uuid = "74011378-53CE-4660-84F4-1248C9A98E1E - f47a2db6f6947368"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerceVenta.UsuarioViewModel.Add(usuario: EAguilarEcommerceVenta.Usuario) -&gt; EAguilarEcommerceVenta.Result"
+                  moduleName = "EAguilarEcommerceVenta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "124">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -898,6 +928,21 @@
                   continueAfterRunningActions = "No"
                   symbolName = "static EAguilarEcommerce.UsuarioViewModel.Update(usuario: EAguilarEcommerce.Usuario) -&gt; EAguilarEcommerce.Result"
                   moduleName = "EAguilarEcommerce"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "E64DB2F7-AFFF-4C76-8F04-0FAA4729CE39 - 23ac26244b783ba8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EAguilarEcommerceVenta.UsuarioViewModel.Update(usuario: EAguilarEcommerceVenta.Usuario) -&gt; EAguilarEcommerceVenta.Result"
+                  moduleName = "EAguilarEcommerceVenta"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerce/ViewModel/UsuarioViewModel.swift"
                   startingColumnNumber = "9223372036854775807"

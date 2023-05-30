@@ -14,6 +14,8 @@ class ProductoGetAllController: UITableViewController {
     let dbManager = DBManager()
     var IdProducto : Int = 0
     
+    var Nombre : String = ""
+    
     
 
     override func viewDidLoad() {

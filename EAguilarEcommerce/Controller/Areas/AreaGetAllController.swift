@@ -10,33 +10,63 @@ import UIKit
 class AreaGetAllController: UIViewController {
     
     var Areas : [Area] = []
+    var Productos: [Producto] = []
     let dbManager = DBManager()
     
     var IdArea : Int = 0
     
+    var Nombre : String = ""
+    
     @IBOutlet weak var UICollectionController: UICollectionView!
     
+    @IBOutlet weak var txtBusqueda: UITextField!
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        
         
         UICollectionController.delegate = self
         UICollectionController.dataSource = self
         UICollectionController.register(UINib(nibName: "AreaCell", bundle: .main), forCellWithReuseIdentifier: "AreaCell")
         
-        
-        var result = AreaViewModel.GetAll()
-        
-        if result.Correct!
+        if Nombre == ""
         {
-            for objArea in result.Objects!
+            var result = AreaViewModel.GetAll()
+            
+            if result.Correct!
             {
-            let area = objArea as! Area
-                Areas.append(area)
+                for objArea in result.Objects!
+                {
+                    let area = objArea as! Area
+                    Areas.append(area)
+                }
             }
         }
+        else if Nombre != ""
+        {
+            var result = ProductoViewModel.GetByIdNombre(Nombre: Nombre)
+            
+            if result.Correct!
+            {
+                for objproducto in result.Objects!
+                {
+                    let producto = objproducto as! Producto
+                    Productos.append(producto)
+                }
+            }
+            
+        }
+        
+    }
+    @IBAction func btnBuscar(_ sender: Any) {
+        
+        /*guard txtBusqueda.text == "" else
+        {
+            print("campo requerido")
+            return
+        }*/
+        
+        Nombre = txtBusqueda.text!
+        performSegue(withIdentifier: "Botonbusqueda", sender: self)
     }
 }
 
@@ -65,11 +95,12 @@ extension AreaGetAllController : UICollectionViewDataSource, UICollectionViewDel
         
         return item
     }
- 
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         IdArea = Areas[indexPath.row].IdArea!
         print(Areas[indexPath.row].IdArea!)
+        
         
         self.IdArea = self.Areas[indexPath.row].IdArea!
         self.performSegue(withIdentifier: "AreaGetAllController", sender: self)
@@ -82,6 +113,14 @@ extension AreaGetAllController : UICollectionViewDataSource, UICollectionViewDel
             let formControl = segue.destination as!  DepartamentoGetAllController
             formControl.IdArea  = self.IdArea
         }
+        
+        else
+        {
+            if segue.identifier == "Botonbusqueda"
+            {
+                let formControl = segue.destination as!  ProductoCollectionController
+                formControl.Nombre = self.Nombre
+            }
+        }
     }
-    
 }
