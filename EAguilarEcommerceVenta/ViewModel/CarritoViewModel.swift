@@ -37,7 +37,7 @@ class CarritoViewModel{
         
         return result
     }
-    func Update(IdAlumno : Int){
+    func UpdateCantidad(IdAlumno : Int){
         
     }
     func Delete(_ IdProducto : Int)->Result{
@@ -48,9 +48,7 @@ class CarritoViewModel{
            let context = appDelegate.persistentContainer.viewContext
            
            let response = NSFetchRequest<NSFetchRequestResult>(entityName: "VentaProducto")
-           //response.predicate = NSPredicate(format: "idProducto = %@", IdProducto)
            response.predicate = NSPredicate(format: "idProducto = %@", String(IdProducto))
-           //response.predicate = NSPredicate(format: "idProducto = %i", IdProducto)
            
            do{
                let test = try context.fetch(response)
@@ -70,7 +68,7 @@ class CarritoViewModel{
            }
            return result
     }
-    func GetById(IdAlumno : Int){
+    func GetById(idProducto : Int){
         
     }
     
@@ -100,7 +98,6 @@ class CarritoViewModel{
                     ventaproducto.producto?.Nombre = producto.Nombre
                     ventaproducto.producto?.Descripcion = producto.Descripcion
                     
-                    //result.Objects?.append(producto)
                     result.Correct = true
                     
                 }
