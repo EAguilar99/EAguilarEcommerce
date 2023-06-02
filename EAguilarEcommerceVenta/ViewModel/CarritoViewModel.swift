@@ -98,6 +98,7 @@ class CarritoViewModel{
                     ventaproducto.producto?.Nombre = producto.Nombre
                     ventaproducto.producto?.Descripcion = producto.Descripcion
                     
+                    result.Objects?.append(producto)
                     result.Correct = true
                     
                 }

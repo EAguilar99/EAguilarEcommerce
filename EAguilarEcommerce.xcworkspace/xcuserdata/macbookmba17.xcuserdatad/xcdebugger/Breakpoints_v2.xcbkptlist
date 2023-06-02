@@ -4482,6 +4482,36 @@
                   endingLineNumber = "92"
                   offsetFromSymbolStart = "3216">
                </Location>
+               <Location
+                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
+                  moduleName = "EAguilarEcommerceVenta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1652">
+               </Location>
+               <Location
+                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
+                  moduleName = "EAguilarEcommerceVenta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "3420">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

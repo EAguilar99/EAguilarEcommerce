@@ -222,22 +222,22 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="equalSpacing" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-02-BGu">
-                                <rect key="frame" x="140" y="296" width="113" height="310.66666666666674"/>
+                                <rect key="frame" x="140" y="296" width="177.66666666666663" height="310.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuario " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLM-YP-9Kk">
-                                        <rect key="frame" x="0.0" y="0.0" width="113" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="177.66666666666666" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-gu-C1C">
-                                        <rect key="frame" x="0.0" y="6" width="113" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="6" width="177.66666666666666" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lz5-HE-AFa" userLabel="correo">
-                                        <rect key="frame" x="0.0" y="12" width="113" height="13.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="12" width="177.66666666666666" height="13.333333333333336"/>
                                         <accessibility key="accessibilityConfiguration" identifier="correo">
                                             <accessibilityTraits key="traits" staticText="YES"/>
                                         </accessibility>
@@ -245,33 +245,33 @@
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-vz-as6">
-                                        <rect key="frame" x="0.0" y="31.333333333333314" width="113" height="50"/>
+                                        <rect key="frame" x="0.0" y="31.333333333333314" width="177.66666666666666" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvg-Yl-UuM">
-                                        <rect key="frame" x="0.0" y="87.333333333333314" width="113" height="20.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="87.333333333333314" width="177.66666666666666" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7I-2X-h5V" userLabel="contraseña">
-                                        <rect key="frame" x="0.0" y="113.66666666666669" width="113" height="34"/>
+                                        <rect key="frame" x="0.0" y="113.66666666666669" width="177.66666666666666" height="34"/>
                                         <accessibility key="accessibilityConfiguration" identifier="contraseña">
                                             <accessibilityTraits key="traits" staticText="YES"/>
                                         </accessibility>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUj-Hq-KIK" userLabel="LblContraseñaOutlet">
-                                        <rect key="frame" x="0.0" y="153.66666666666669" width="113" height="50"/>
+                                        <rect key="frame" x="0.0" y="153.66666666666669" width="177.66666666666666" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-2n-T52">
-                                        <rect key="frame" x="0.0" y="209.66666666666669" width="113" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="209.66666666666669" width="177.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Login">
                                             <color key="baseBackgroundColor" red="0.21412627549999999" green="0.58596407309999998" blue="0.74009452379999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -281,7 +281,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿No tienes una cuenta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="376-YJ-Ajh">
-                                        <rect key="frame" x="0.0" y="250.00000000000003" width="113" height="20.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="250.00000000000003" width="177.66666666666666" height="20.333333333333343"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="d7O-nH-MBg"/>
                                         </constraints>
@@ -290,7 +290,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61I-ok-Rgx">
-                                        <rect key="frame" x="0.0" y="276.33333333333337" width="113" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="276.33333333333337" width="177.66666666666666" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Registrate"/>
                                         <connections>
