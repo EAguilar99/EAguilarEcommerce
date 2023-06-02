@@ -8,11 +8,13 @@
 import UIKit
 import SwipeCellKit
 
-class CarritoGetAllController: UITableViewController {
+class CarritoGetAllController: UIViewController{
     
     var carritoViewModel = CarritoViewModel()
     var productosdelCarrito : [VentaProductos] = []
     var dbManager = DBManager()
+    
+    @IBOutlet weak var CarritoTableView: UITableView!
     
     
     override func viewDidLoad() {
@@ -20,66 +22,74 @@ class CarritoGetAllController: UITableViewController {
         
         UpdateUI()
         
-        let nib = UINib(nibName: "CarritoCell" , bundle: .main)
+        CarritoTableView.delegate = self
+        CarritoTableView.dataSource = self
         
-        tableView.register(nib, forCellReuseIdentifier: "CarritoCell")
+        //let nib = UINib(nibName: "CarritoCell" , bundle: .main)
+        
+        CarritoTableView.register(UINib(nibName: "CarritoCell" , bundle: .main), forCellReuseIdentifier: "CarritoCell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
-          UpdateUI()
-      }
+        UpdateUI()
+    }
+    
+    func UpdateUI()
+    {
+        var result = carritoViewModel.GetAll()
+        productosdelCarrito.removeAll()
+        
+        if result.Correct!
+        {
+            for ObjCarrito in result.Objects!
+            {
+                var carrito = ObjCarrito as! VentaProductos
+                productosdelCarrito.append(carrito)
+            }
+            CarritoTableView.reloadData()
+        }
+    }
+}
+
     
     // MARK: - Table view data source
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return productosdelCarrito.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CarritoCell", for: indexPath) as! CarritoCell
-        cell.delegate = self
-        // Configure the cell...
+    extension CarritoGetAllController : UITableViewDataSource, UITableViewDelegate
+    {
+        func numberOfSections(in tableView: UITableView) -> Int {
+            // #warning Incomplete implementation, return the number of sections
+            return 1
+        }
         
-        if productosdelCarrito[indexPath.row].producto?.Imagen == "" || productosdelCarrito[indexPath.row].producto?.Imagen == nil
-        {
-            cell.UIImageOutlet.image = UIImage(named: "defaultimage")
-                }
-        else{
-                    var string : String = productosdelCarrito[indexPath.row].producto!.Imagen!
-                    var dataDecoded : Data = Data(base64Encoded: string)!
-            cell.UIImageOutlet.image = UIImage(data: dataDecoded)
-                }
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            // #warning Incomplete implementation, return the number of rows
+            return productosdelCarrito.count
+        }
         
-        cell.lblNombreOutlet.text = productosdelCarrito[indexPath.row].producto?.Nombre
-        cell.lblCantidadOutlet.text = (String(productosdelCarrito[indexPath.row].cantidad!))
-        //cell.lblPrecioOutlet.text = (String(productosdelCarrito[indexPath.row].producto!.PrecioUnitario!))
-        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CarritoCell", for: indexPath) as! CarritoCell
+            cell.delegate = self
+            // Configure the cell...
+            
+            if productosdelCarrito[indexPath.row].producto?.Imagen == "" || productosdelCarrito[indexPath.row].producto?.Imagen == nil
+            {
+                cell.UIImageOutlet.image = UIImage(named: "defaultimage")
+            }
+            else{
+                var string : String = productosdelCarrito[indexPath.row].producto!.Imagen!
+                var dataDecoded : Data = Data(base64Encoded: string)!
+                cell.UIImageOutlet.image = UIImage(data: dataDecoded)
+            }
+            
+            cell.lblNombreOutlet.text = productosdelCarrito[indexPath.row].producto?.Nombre
+            cell.lblCantidadOutlet.text = (String(productosdelCarrito[indexPath.row].cantidad!))
+            //cell.lblPrecioOutlet.text = (String(productosdelCarrito[indexPath.row].producto!.PrecioUnitario!))
+            
             print("el index actual es \(indexPath.row)")
             return cell
         }
-        
-        func UpdateUI()
-        {
-            var result = carritoViewModel.GetAll()
-            productosdelCarrito.removeAll()
-            
-            if result.Correct!
-            {
-                for ObjCarrito in result.Objects!
-                {
-                    var carrito = ObjCarrito as! VentaProductos
-                    productosdelCarrito.append(carrito)
-                }
-                tableView.reloadData()
-            }
-        }
     }
+
 
 //MARK: implementacion de Swipe
 extension CarritoGetAllController : SwipeTableViewCellDelegate{
@@ -128,7 +138,7 @@ extension CarritoGetAllController : SwipeTableViewCellDelegate{
                 let producto = objproducto as! VentaProductos
                 productosdelCarrito.append(producto)
             }
-            tableView?.reloadData()
+            CarritoTableView.reloadData()
         }
     }
 }

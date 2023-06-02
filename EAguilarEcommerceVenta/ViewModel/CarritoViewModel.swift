@@ -37,9 +37,43 @@ class CarritoViewModel{
         
         return result
     }
-    func UpdateCantidad(IdAlumno : Int){
-        
+    func UpdateCantidad(IdProducto : Int, Cantidad : Int)->Result
+    {
+        var result = Result()
+               
+               var ventasproductos = VentaProductos()
+               
+                  let context = appDelegate.persistentContainer.viewContext
+                  
+               let response : NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "VentaProducto")
+                  
+                  response.predicate = NSPredicate(format: "idProducto = \(IdProducto)")
+               do{
+                   let test = try context.fetch(response)
+                   
+                   let objectUpdate = test[0] as! NSManagedObject
+                   objectUpdate.setValue(Cantidad, forKey: "cantidad")
+                   do
+                   {
+                       try context.save()
+                       result.Correct = true
+                   }
+                   catch let error
+                   {
+                       result.Correct = false
+                       result.ErrorMessage = error.localizedDescription
+                       result.Ex = error               }
+               }
+        catch let error
+        {
+                   result.Correct = false
+                   result.ErrorMessage = error.localizedDescription
+                   result.Ex = error
+               }
+               return result
     }
+    
+    
     func Delete(_ IdProducto : Int)->Result{
         var result = Result()
            
@@ -98,7 +132,7 @@ class CarritoViewModel{
                     ventaproducto.producto?.Nombre = producto.Nombre
                     ventaproducto.producto?.Descripcion = producto.Descripcion
                     
-                    result.Objects?.append(producto)
+                    //result.Objects?.append(producto)
                     result.Correct = true
                     
                 }

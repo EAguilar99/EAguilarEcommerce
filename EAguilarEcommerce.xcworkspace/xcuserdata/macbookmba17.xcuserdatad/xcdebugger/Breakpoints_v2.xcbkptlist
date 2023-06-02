@@ -3918,102 +3918,10 @@
             filePath = "EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "GetAll()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1868">
-               </Location>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc3fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc1af"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc18e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "52"
-                  endingLineNumber = "52"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc40b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "140">
-               </Location>
-               <Location
-                  uuid = "15E65FE2-6C90-47D9-8E40-6D7AF5ADCB08 - 4a8933ba9fcbc4c9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "140">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4342,177 +4250,10 @@
             filePath = "EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
             landmarkName = "GetAll()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc3fe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "1928">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1652">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "3420">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1644">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc39f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "3216">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc618"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "1644">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc618"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "3216">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "1644">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "3216">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "1652">
-               </Location>
-               <Location
-                  uuid = "519B4A0F-BBEC-4DB9-A0E5-9D044FAAABAD - 4a8933ba9fcbc6d6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoViewModel.GetAll() -&gt; EAguilarEcommerceVenta.Result"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/ViewModel/CarritoViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "3420">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -4743,68 +4484,35 @@
                   endingLineNumber = "11"
                   offsetFromSymbolStart = "0">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "45783170-7706-4B27-904B-84C176EC66E4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "UpdateUI()"
-            landmarkType = "7">
-            <Locations>
                <Location
-                  uuid = "45783170-7706-4B27-904B-84C176EC66E4 - 53b57008abdb023b"
+                  uuid = "7F3A7DFF-CDB1-4C32-9B17-D1B3061280FF - 693931fa7b57c0a2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.UpdateUI() -&gt; ()"
+                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EAguilarEcommerceVenta.CarritoGetAllController"
                   moduleName = "EAguilarEcommerceVenta"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "96">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "100">
                </Location>
                <Location
-                  uuid = "45783170-7706-4B27-904B-84C176EC66E4 - 53b57008abdb023b"
+                  uuid = "7F3A7DFF-CDB1-4C32-9B17-D1B3061280FF - 7fe34fbaf5dca4d9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.UpdateUI() -&gt; ()"
+                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EAguilarEcommerceVenta.CarritoGetAllController&gt;"
                   moduleName = "EAguilarEcommerceVenta"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  uuid = "45783170-7706-4B27-904B-84C176EC66E4 - 53b57008abdb021a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.UpdateUI() -&gt; ()"
-                  moduleName = "EAguilarEcommerceVenta"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "108">
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "76">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -4819,8 +4527,8 @@
             filePath = "EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
             <Locations>
@@ -4852,6 +4560,21 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "45"
                   endingLineNumber = "45"
+                  offsetFromSymbolStart = "520">
+               </Location>
+               <Location
+                  uuid = "64E50630-1549-4B3B-B825-726234CF64CC - 40bde0c07373d419"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EAguilarEcommerceVenta.CarritoGetAllController.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "EAguilarEcommerceVenta"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/macbookmba17/Documents/EAguilarPOO/EAguilarEcommerce/EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
                   offsetFromSymbolStart = "520">
                </Location>
             </Locations>
@@ -4915,8 +4638,8 @@
             filePath = "EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
             landmarkName = "CarritoGetAllController"
             landmarkType = "21">
          </BreakpointContent>
@@ -4931,8 +4654,8 @@
             filePath = "EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "tableView(_:editActionsForRowAt:for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -4947,8 +4670,8 @@
             filePath = "EAguilarEcommerceVenta/Controller/Carrito/CarritoGetAllController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "tableView(_:editActionsForRowAt:for:)"
             landmarkType = "7">
          </BreakpointContent>
