@@ -10,6 +10,9 @@ import SwipeCellKit
 
 class CarritoGetAllController: UIViewController{
     
+    var total : Double = 0
+    var subtotal : Int = 0
+    
     var carritoViewModel = CarritoViewModel()
     var productosdelCarrito : [VentaProductos] = []
     var dbManager = DBManager()
@@ -84,6 +87,14 @@ class CarritoGetAllController: UIViewController{
             cell.lblNombreOutlet.text = productosdelCarrito[indexPath.row].producto?.Nombre
             cell.lblCantidadOutlet.text = (String(productosdelCarrito[indexPath.row].cantidad!))
             //cell.lblPrecioOutlet.text = (String(productosdelCarrito[indexPath.row].producto!.PrecioUnitario!))
+            cell.lblSubtotalOutlet.text = productosdelCarrito[indexPath.row].producto?.PrecioUnitario?.description
+            
+            subtotal = productosdelCarrito[indexPath.row].cantidad! * (productosdelCarrito[indexPath.row].producto?.PrecioUnitario ?? 0)
+            cell.lblSubtotalOutlet.text = String(subtotal)
+            
+            cell.stepper.value = Double(productosdelCarrito[indexPath.row].cantidad!)
+            cell.stepper.tag = indexPath.row
+            cell.stepper.addTarget(self , action: #selector(Steeperaction), for: .touchUpInside)
             
             print("el index actual es \(indexPath.row)")
             return cell
@@ -141,7 +152,26 @@ extension CarritoGetAllController : SwipeTableViewCellDelegate{
             CarritoTableView.reloadData()
         }
     }
-}
+    
+    
+    @objc func Steeperaction(sender: UIStepper){
+            let indexPath = IndexPath(row: sender.tag, section: 0)
+            print("sender ---> \(sender.value)")
+            if sender.value >= 1{
+                if carritoViewModel.UpdateCantidad(IdProducto: (productosdelCarrito[indexPath.row].producto?.IdProducto)!, Cantidad: Int(sender.value)).Correct!{
+                    total = 0.0
+                    UpdateUI()
+                    print("Se actualizó")
+                }else{
+                    print("No se puede actualizar")
+                }
+            }else{
+                sender.value = 1
+                print("Ocurrio un error")
+            }
+        }
+    }
+
     
     
  

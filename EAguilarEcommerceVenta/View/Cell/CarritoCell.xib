@@ -9,15 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="309" id="KGk-i7-Jjw" customClass="CarritoCell" customModule="EAguilarEcommerceVenta" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="432" height="309"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="308" id="KGk-i7-Jjw" customClass="CarritoCell" customModule="EAguilarEcommerceVenta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="308"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="432" height="309"/>
+                <rect key="frame" x="0.0" y="0.0" width="540" height="308"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Y1A-kJ-YlW">
-                        <rect key="frame" x="20" y="11" width="392" height="32"/>
+                        <rect key="frame" x="20" y="11" width="500" height="32"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m7C-C0-7FF">
                                 <rect key="frame" x="0.0" y="0.0" width="80" height="32"/>
@@ -27,25 +27,31 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3H-8D-HFl">
-                                <rect key="frame" x="90" y="0.0" width="61.333333333333343" height="32"/>
+                                <rect key="frame" x="97.333333333333329" y="0.0" width="61.333333333333329" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sz5-lh-H7Z">
-                                <rect key="frame" x="161.33333333333334" y="0.0" width="68.666666666666657" height="32"/>
+                                <rect key="frame" x="175.66666666666666" y="0.0" width="68.666666666666657" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJq-lW-EM1">
-                                <rect key="frame" x="240" y="0.0" width="48" height="32"/>
+                                <rect key="frame" x="261.66666666666669" y="0.0" width="48" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subtotal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1o2-Jn-Z4e">
+                                <rect key="frame" x="326.66666666666669" y="0.0" width="62" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="tCO-aD-FmM">
-                                <rect key="frame" x="298" y="0.0" width="94" height="32"/>
+                                <rect key="frame" x="406" y="0.0" width="94" height="32"/>
                             </stepper>
                         </subviews>
                     </stackView>
@@ -63,8 +69,10 @@
                 <outlet property="lblCantidadOutlet" destination="Sz5-lh-H7Z" id="SJp-Lc-yvL"/>
                 <outlet property="lblNombreOutlet" destination="T3H-8D-HFl" id="HPw-oZ-7C7"/>
                 <outlet property="lblPrecioOutlet" destination="BJq-lW-EM1" id="TQ1-3t-5cF"/>
+                <outlet property="lblSubtotalOutlet" destination="1o2-Jn-Z4e" id="AAz-OB-YxH"/>
+                <outlet property="stepper" destination="tCO-aD-FmM" id="bHU-aG-NO6"/>
             </connections>
-            <point key="canvasLocation" x="1696" y="52"/>
+            <point key="canvasLocation" x="1777.0992366412213" y="51.408450704225352"/>
         </tableViewCell>
     </objects>
 </document>

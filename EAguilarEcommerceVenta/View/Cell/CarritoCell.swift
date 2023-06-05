@@ -11,6 +11,8 @@ import SwipeCellKit
 class CarritoCell: SwipeTableViewCell  {
     @IBOutlet weak var UIImageOutlet: UIImageView!
     
+    @IBOutlet weak var lblSubtotalOutlet: UILabel!
+    @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var lblPrecioOutlet: UILabel!
     @IBOutlet weak var lblCantidadOutlet: UILabel!
     @IBOutlet weak var lblNombreOutlet: UILabel!
